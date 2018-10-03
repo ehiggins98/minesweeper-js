@@ -12,6 +12,12 @@ let game = undefined;
  * PRECONDITION: boardLength and boardHeight have been changed by the user and both are valid inputs.
  * POSTCONDITION: minesInput's readOnly attribute has been set to true or false.
  */
+export function cheatMode(){
+	console.log("cheat mode enabled");
+	console.log("something else")
+	game.revealBombs()
+}
+
 export function checkMinesInput() {
     let lengthField = document.getElementById("boardLength");
     let heightField = document.getElementById("boardHeight");
@@ -66,10 +72,14 @@ export function boardGen() {
 
 
 		document.getElementById("status").hidden = false;
+
+		document.getElementById('cheatButton').style.display = "block";
 		document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-lg btn-block");
+		document.h
 		document.getElementById("startButton").innerHTML = "Reset";
 		document.getElementById("flagsPlaced").innerHTML = 0;
 		document.getElementById("minesOnBoard").innerHTML = mines;
+
 	}
 	else {
 		if (lengthField.validity.valid == false) {

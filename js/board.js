@@ -403,9 +403,21 @@ export class Board {
 	* POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was clicked, set just that tile to be revealed. If a 0 was clicked, every adjacent tile not a mine is revealed. All spaces that were flagged that are now revealed are not flagged anymore.
 	* @param {number} i Row property of tile being revealed.
 	* @param {number} j Column property of tile being revealed.
-	*/
+    */
+    
+    revealBombs(){
+        let self = this;
+        for(let i = 0; i < this.rows; i++){
+            for(let j = 0; j < this.columns; j++){
+                if (this.arr[i][j].getMine() == true) {
+                    self.arr[i][j].reveal()
+                }
+                //console.log(' board position: (' + i + ', ' + j + ')' + this.arr[i][j].getMine())
+            }
+        }
+    }
     clickReveal(i, j) {
-
+        console.log("in click reveal")
         let self = this;
 
         if (this.arr[i][j].getMine() == true) {

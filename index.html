@@ -4,10 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Minesweeper!</title>
+		<title>game!</title>
 		<meta name="description" content="The best Minesweeper you've ever played in your short, pathetic life!">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -62,8 +61,13 @@
 						</div>
 					</div>
 				</div>
-				<button type="button" class="btn btn-primary btn-lg btn-block" id="startButton">Start</button>
+				<div id="buttonDiv">
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="startButton">Start</button>
+					
+				</div>
 			</form>
+			<br>
+			<button class="btn btn-primary btn-sm btn-block" style="display: none;" id="cheatButton">Enable Cheat Mode</button>
 
 
 		</div>
@@ -168,8 +172,9 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js" type="module"></script>
         <script type="module">
-            import { checkMinesInput, boardGen, leftClick, rightClick } from './js/main.js';
-            document.getElementById("boardLength").addEventListener("change", checkMinesInput);
+            import { checkMinesInput, boardGen, leftClick, rightClick, cheatMode } from './js/main.js';
+			document.getElementById("boardLength").addEventListener("change", checkMinesInput);
+			document.getElementById("cheatButton").addEventListener("click", cheatMode);
             document.getElementById("boardHeight").addEventListener("change", checkMinesInput);
             document.getElementById("startButton").addEventListener("click", boardGen);
 			document.getElementById("gameBoard").addEventListener("click", function(event) {
