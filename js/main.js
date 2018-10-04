@@ -1,5 +1,5 @@
 'use strict';
-import { Board } from './board.js'
+import { Board } from './board.js';
 
 /**
  * Global game object that Main interfaces with
@@ -40,6 +40,7 @@ export function boardGen() {
 	heightField.setAttribute("class", "form-control");
 	minesField.setAttribute("class", "form-control");
 
+	setTimeout(playGame, 0);
 
 	if (lengthField.validity.valid == true && heightField.validity.valid == true && minesField.validity.valid == true) {
 		let length = lengthField.value;
@@ -193,5 +194,14 @@ export function rightClick(clicked) {
 			$('#winner').modal('show');
 		});
 	}
+}
 
+export function playGame() {
+	let interval = setInterval(() => {
+		document.getElementById(Math.floor(Math.random() * game.rows * game.columns).toString()).click();
+
+		if(game.winner || game.loser) {
+			clearInterval(interval);
+		}
+	}, 1000)
 }
