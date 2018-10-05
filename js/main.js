@@ -49,7 +49,6 @@ export function boardGen() {
 	heightField.setAttribute("class", "form-control");
 	minesField.setAttribute("class", "form-control");
 
-	setTimeout(playGame, 0);
 
 	if (lengthField.validity.valid == true && heightField.validity.valid == true && minesField.validity.valid == true) {
 		let length = lengthField.value;
@@ -84,6 +83,7 @@ export function boardGen() {
 		document.getElementById("flagsPlaced").innerHTML = 0;
 		document.getElementById("minesOnBoard").innerHTML = mines;
 
+		setTimeout(playGame, 0);
 	}
 	else {
 		if (lengthField.validity.valid == false) {
@@ -210,11 +210,72 @@ export function rightClick(clicked) {
 }
 
 export function playGame() {
-	let interval = setInterval(() => {
-		document.getElementById(Math.floor(Math.random() * game.rows * game.columns).toString()).click();
-
-		if(game.winner || game.loser) {
-			clearInterval(interval);
+	let iInc = [0, 1, 1, 1, 0, -1, -1, -1];
+	let jInc = [1, 1, 0, -1, -1, -1, 0, 1];
+	
+	let countAdjacentHidden = (i, j) => {
+		let count = 0
+		for(let k = 0; k < iInc.length; k++) {
+			count += isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed;
 		}
-	}, 1000)
+		return count;
+	};
+
+	let putProbabilities = (probabilities, i, j, prob) => {
+		for(let k = 0; k < iInc.length; k++) {
+			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+				probabilities[i+iInc[k]][j+jInc[k]] += prob;
+			}
+		}
+	};
+
+	let flagAdjacent = (i, j) => {
+		for(let k = 0; k < iInc.length; k++) {
+			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed) {
+				console.log(i, j, (i+iInc[k]) * game.columns + (j+jInc[k]));
+				document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()).rightClick();
+			}
+		}
+	}
+
+	setTimeout(makeFirstMove, 1000);
+	
+	let probabilities = initializeProbabilities();
+
+	setInterval(() => {
+		for(let i = 0; i < game.arr.length; i++) {
+			for(let j = 0; j < game.arr[i].length; j++) {
+				if(game.arr[i][j].revealed && game.arr[i][j].adjNum > 0 && game.arr[i][j].adjNum < 9) {
+					let adjacent = countAdjacentHidden(i, j);
+
+					if(adjacent == game.arr[i][j].adjNum) {
+						flagAdjacent(i, j);
+					}
+
+					putProbabilities(probabilities, i, j, game.arr[i][j].adjNum / adjacent);
+				}
+			}
+		}
+		console.log(probabilities);
+	}, 1000);
+}
+
+function initializeProbabilities() {
+	let probabilities = [];
+
+	for(let i = 0; i < game.arr.length; i++) {
+		probabilities[i] = [];
+		for(let j = 0; j < game.arr.length; j++) {
+			probabilities[i].push(0);
+		}
+	}
+	return probabilities;
+}
+
+function isInBoard(i, j) {
+	return i < game.arr.length && i >= 0 && j < game.arr[i].length && j >= 0
+}
+
+function makeFirstMove() {
+	document.getElementById(Math.floor(game.rows/2) * game.columns + Math.floor(game.columns/2)).click();
 }
