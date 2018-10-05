@@ -14,8 +14,11 @@ let game = undefined;
  */
 export function cheatMode(){
 	console.log("cheat mode enabled");
-	console.log("something else")
 	game.revealBombs()
+	setTimeout(function(){
+		document.getElementById('cheatButton').innerHTML = "Enable Cheat Mode"
+	}, 3000)
+	
 }
 
 export function checkMinesInput() {
@@ -75,7 +78,7 @@ export function boardGen() {
 
 		document.getElementById('cheatButton').style.display = "block";
 		document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-lg btn-block");
-		document.h
+		// document.h
 		document.getElementById("startButton").innerHTML = "Reset";
 		document.getElementById("flagsPlaced").innerHTML = 0;
 		document.getElementById("minesOnBoard").innerHTML = mines;
