@@ -395,7 +395,6 @@ export class Board {
   }
 
   clickReveal(i, j) {
-    console.log("in click reveal");
     let self = this;
 
     if (this.arr[i][j].getMine() == true) {

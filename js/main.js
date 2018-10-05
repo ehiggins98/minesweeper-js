@@ -231,9 +231,9 @@ export function playGame() {
 
 	let flagAdjacent = (i, j) => {
 		for(let k = 0; k < iInc.length; k++) {
-			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed) {
-				console.log(i, j, (i+iInc[k]) * game.columns + (j+jInc[k]));
-				document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()).rightClick();
+			console.log('here');
+			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+				rightClick(document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()));
 			}
 		}
 	}
@@ -256,7 +256,6 @@ export function playGame() {
 				}
 			}
 		}
-		console.log(probabilities);
 	}, 1000);
 }
 
