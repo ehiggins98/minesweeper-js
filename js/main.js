@@ -77,13 +77,13 @@ export function boardGen() {
 		document.getElementById("status").hidden = false;
 
 		document.getElementById('cheatButton').style.display = "block";
+		document.getElementById('botButton').style.display = "block";
 		document.getElementById("startButton").setAttribute("class", "btn btn-danger btn-lg btn-block");
 		// document.h
 		document.getElementById("startButton").innerHTML = "Reset";
 		document.getElementById("flagsPlaced").innerHTML = 0;
 		document.getElementById("minesOnBoard").innerHTML = mines;
 
-		setTimeout(playGame, 0);
 	}
 	else {
 		if (lengthField.validity.valid == false) {
@@ -253,6 +253,7 @@ export function playGame() {
 					}
 
 					putProbabilities(probabilities, i, j, game.arr[i][j].adjNum / adjacent);
+					console.log(probabilities);
 				}
 			}
 		}
@@ -277,4 +278,10 @@ function isInBoard(i, j) {
 
 function makeFirstMove() {
 	document.getElementById(Math.floor(game.rows/2) * game.columns + Math.floor(game.columns/2)).click();
+}
+
+function findLowest() {
+	for(let i = 0; i < game.arr.length; i++){
+		for
+	}
 }
