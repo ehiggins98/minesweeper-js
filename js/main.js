@@ -174,12 +174,6 @@ export function rightClick(clicked) {
 	document.getElementById("botButton").style.display = "none";
 	let cellID = Number(clicked.getAttribute("id"));
 	let flags = document.getElementById("flagsPlaced").innerHTML;
-	if (game.loser || game.winner) {
-		$(function(){
-			$('#reset-game').modal('show');
-		});
-		return null;
-	}
 
 	//[row, column]
 	let coord = [Math.floor(cellID / game.columns), (cellID % game.columns)];

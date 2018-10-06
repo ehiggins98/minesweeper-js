@@ -387,10 +387,9 @@ export class Board {
   }
 
   resetCheatMode(numOfCells) {
-    console.log("in resetCheat mode");
-    console.log(numOfCells);
+
     for (let i = 0; i < numOfCells; i++) {
-      document.getElementById(i).style.backgroundColor = "White";
+      document.getElementById(i).style.backgroundColor = "";
     }
   }
 
