@@ -68,7 +68,7 @@
 			</form>
 			<br>
 			<button class="btn btn-primary btn-sm btn-block" style="display: none;" id="cheatButton">Enable Cheat Mode</button>
-			<button class="btn btn-primary btn-sm btn-block" style="display: none;" id="botButton" onclick="playGame()">Let Bot Play for You</button>
+			<button class="btn btn-primary btn-sm btn-block" style="display: none;" id="botButton">Let Bot Play for You</button>
 
 		</div>
 		<br>
@@ -172,9 +172,10 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js" type="module"></script>
         <script type="module">
-            import { checkMinesInput, boardGen, leftClick, rightClick, cheatMode } from './js/main.js';
+            import { checkMinesInput, boardGen, leftClick, rightClick, cheatMode, playGame } from './js/main.js';
 			document.getElementById("boardLength").addEventListener("change", checkMinesInput);
 			document.getElementById("cheatButton").addEventListener("click", cheatMode);
+			document.getElementById("botButton").addEventListener("click", playGame);
             document.getElementById("boardHeight").addEventListener("change", checkMinesInput);
             document.getElementById("startButton").addEventListener("click", boardGen);
 			document.getElementById("gameBoard").addEventListener("click", function(event) {

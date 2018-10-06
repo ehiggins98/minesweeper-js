@@ -223,7 +223,7 @@ export function playGame() {
 
 	let putProbabilities = (probabilities, i, j, prob) => {
 		for(let k = 0; k < iInc.length; k++) {
-			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
 				probabilities[i+iInc[k]][j+jInc[k]] += prob;
 			}
 		}
@@ -231,7 +231,6 @@ export function playGame() {
 
 	let flagAdjacent = (i, j) => {
 		for(let k = 0; k < iInc.length; k++) {
-			console.log('here');
 			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
 				rightClick(document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()));
 			}
@@ -240,9 +239,10 @@ export function playGame() {
 
 	setTimeout(makeFirstMove, 1000);
 	
-	let probabilities = initializeProbabilities();
 
-	setInterval(() => {
+
+	let interval = setInterval(() => {
+		let probabilities = initializeProbabilities();
 		for(let i = 0; i < game.arr.length; i++) {
 			for(let j = 0; j < game.arr[i].length; j++) {
 				if(game.arr[i][j].revealed && game.arr[i][j].adjNum > 0 && game.arr[i][j].adjNum < 9) {
@@ -253,9 +253,15 @@ export function playGame() {
 					}
 
 					putProbabilities(probabilities, i, j, game.arr[i][j].adjNum / adjacent);
-					console.log(probabilities);
 				}
 			}
+		}
+		findLowest(probabilities);
+		console.log(probabilities);
+
+
+		if(game.winner || game.loser){
+			clearInterval(interval);
 		}
 	}, 1000);
 }
@@ -265,7 +271,7 @@ function initializeProbabilities() {
 
 	for(let i = 0; i < game.arr.length; i++) {
 		probabilities[i] = [];
-		for(let j = 0; j < game.arr.length; j++) {
+		for(let j = 0; j < game.arr[i].length; j++) {
 			probabilities[i].push(0);
 		}
 	}
@@ -280,8 +286,19 @@ function makeFirstMove() {
 	document.getElementById(Math.floor(game.rows/2) * game.columns + Math.floor(game.columns/2)).click();
 }
 
-function findLowest() {
+function findLowest(probabilities) {
+	let minProb = 101;
+	let minX = 0;
+	let minY = 0;
 	for(let i = 0; i < game.arr.length; i++){
-		for
+		for(let j = 0; j <game.arr[i].length; j++){
+			if(probabilities[i][j] > 0 && probabilities[i][j] < minProb){
+				minProb = probabilities[i][j];
+				minX = i;
+				minY = j;
+			}
+		}
 	}
+
+	leftClick(document.getElementById(((minX) * game.columns + (minY)).toString()));
 }
