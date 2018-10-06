@@ -109,6 +109,7 @@ export function boardGen() {
  * @return {null} Return null only if the game is over or the tile has already been revealed.
  */
 export function leftClick(clicked) {
+	document.getElementById("botButton").style.display = "none";
 	let cellID = Number(clicked.getAttribute("id"));
 	let flags = document.getElementById("flagsPlaced").innerHTML;
 	if (game.loser || game.winner) {
@@ -176,6 +177,7 @@ export function leftClick(clicked) {
  * @return {null} Return null only if the game is over or the tile has already been revealed.
  */
 export function rightClick(clicked) {
+	document.getElementById("botButton").style.display = "none";
 	let cellID = Number(clicked.getAttribute("id"));
 	let flags = document.getElementById("flagsPlaced").innerHTML;
 	if (game.loser || game.winner) {
