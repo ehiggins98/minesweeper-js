@@ -109,6 +109,7 @@ export function boardGen() {
  * @return {null} Return null only if the game is over or the tile has already been revealed.
  */
 export function leftClick(clicked) {
+	document.getElementById("botButton").style.display = "none";
 	let cellID = Number(clicked.getAttribute("id"));
 	let flags = document.getElementById("flagsPlaced").innerHTML;
 	if (game.loser || game.winner) {
@@ -176,6 +177,7 @@ export function leftClick(clicked) {
  * @return {null} Return null only if the game is over or the tile has already been revealed.
  */
 export function rightClick(clicked) {
+	document.getElementById("botButton").style.display = "none";
 	let cellID = Number(clicked.getAttribute("id"));
 	let flags = document.getElementById("flagsPlaced").innerHTML;
 	if (game.loser || game.winner) {
@@ -278,10 +280,4 @@ function isInBoard(i, j) {
 
 function makeFirstMove() {
 	document.getElementById(Math.floor(game.rows/2) * game.columns + Math.floor(game.columns/2)).click();
-}
-
-function findLowest() {
-	for(let i = 0; i < game.arr.length; i++){
-		for
-	}
 }
