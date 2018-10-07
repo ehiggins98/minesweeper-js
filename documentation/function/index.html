@@ -181,7 +181,8 @@
       <div>
         
         
-        
+        <div data-ice="description"><p>Plays the game with the bot.</p>
+</div>
       </div>
     </td>
     <td>
@@ -235,11 +236,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber43">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber53">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {boardGen} from &apos;<span><a href="file/js/main.js.html#lineNumber43">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {boardGen} from &apos;<span><a href="file/js/main.js.html#lineNumber53">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Run when start/Reset button is pressed, generates a game board if input conditions are met. Checks the validitiy of every input field (non-empty and within their respective ranges). If they are all valid, a new <span><a href="class/js/board.js~Board.html">Board</a></span> object is created and stored in game. The Board then plants the mines and all adjacent numbers calling <span><a href="class/js/board.js~Board.html#instance-method-plantMine">plantMine</a></span> and <span><a href="class/js/board.js~Board.html#instance-method-plantAdjNum">plantAdjNum</a></span>. The game board area is then cleared and a table is created by creating element nodes of type TD, attaching a numeric ID to each one. These are then appended into TR nodes, which are then appended to the TABLE node in index.html. The status display is then unhidden and the start button is changed to a reset button. If all input fields are not valid, display an alert and force the user to try their inputs again.
@@ -281,11 +282,11 @@ POSTCONDITION: game is now a Board with mines and adjacent numbers planted, game
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber15">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber25">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {cheatMode} from &apos;<span><a href="file/js/main.js.html#lineNumber15">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {cheatMode} from &apos;<span><a href="file/js/main.js.html#lineNumber25">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Run when length input and height field are changed, enables and disables the number of mines input field based on validity of length and height input field. Checks length and height input fields and checks whether they are valid or not. If they are both valid (non-empty and within the range 2-45), the input field for the number of mines is set to non-read only and the maximum value is set to be equal to the area of the board - 1. If not, the input field for the number of mines is set to read only.
@@ -327,11 +328,11 @@ POSTCONDITION: minesInput&apos;s readOnly attribute has been set to true or fals
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber24">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber34">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkMinesInput} from &apos;<span><a href="file/js/main.js.html#lineNumber24">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkMinesInput} from &apos;<span><a href="file/js/main.js.html#lineNumber34">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -370,11 +371,11 @@ POSTCONDITION: minesInput&apos;s readOnly attribute has been set to true or fals
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber111">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber121">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {leftClick} from &apos;<span><a href="file/js/main.js.html#lineNumber111">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {leftClick} from &apos;<span><a href="file/js/main.js.html#lineNumber121">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Run when any tile in the game table is clicked, reveals the tile clicked on. Checks if tile clicked on is unrevealed and if the game is still happening. If not, return null. If so, run <span>clickreveal</span> on the tile, determining its coordinates from the tile&apos;s ID. If the tile is a mine, run <span><a href="class/js/board.js~Board.html#instance-method-showAllMine">showAllMine</a></span>, display all mines on the board and show the game over display. If the tile is a number not equal to 0, show the number on the clicked tile. If the tile is equal to 0, loop through the whole board looking for revealed tiles and display all revealed tiles.
@@ -446,14 +447,15 @@ POSTCONDITION: The tile clicked on has been revealed, as well as any adjacent ti
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber214">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber215">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {playGame} from &apos;<span><a href="file/js/main.js.html#lineNumber214">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {playGame} from &apos;<span><a href="file/js/main.js.html#lineNumber215">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>Plays the game with the bot. This should only be called once per game, as it schedules a task to run every second until the game finishes.</p>
+</div>
 
   
 
@@ -489,11 +491,11 @@ POSTCONDITION: The tile clicked on has been revealed, as well as any adjacent ti
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber179">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/main.js.html#lineNumber183">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {rightClick} from &apos;<span><a href="file/js/main.js.html#lineNumber179">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {rightClick} from &apos;<span><a href="file/js/main.js.html#lineNumber183">minesweeper/js/main.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Run when any tile in the game table is right-clicked, places or removes a flag on the tile clicked. Checks if if the game is still happening. If not, return null. If so, determine coordinates of the tile clicked using its ID and execute <span>flagTile</span>. If <span>flagTile</span> returns true, change the space inside the tile to be a flag. If <span>flagTile</span> returns false, remove the flag inside the tile. If <span>flagTile</span> returns null, return null. Then check if the game was won (all flags placed on all mines). If so, show the winner display.
