@@ -4,19 +4,21 @@ EECS 448 Project 1: Minesweeper - Written in Javascript and HTML
 
 To play the game, enter a number between 2 and 45 for the dimensions of your Minesweeper board, and then enter how many mines you want on the board (between 1 and 1 less than the total number of tiles on the board) and click "Start". Then, to reveal a space, left-click on it. To flag a space, right-click on it (and right-click again to un-flag it). Once all the mines have been flagged, you win the game. But if you reveal a mine, the game is over. You may change the board dimensions and mine count at any time and click "Restart" to start a new game.
 
-### [Play the Game](https://j3productions.github.io/minesweeper-js)
+### [Play the Game](https://ehiggins98.github.io/minesweeper-js/)
 
 ## Authors
 
 **[J3 Productions](https://github.com/J3Productions)** - [Jielong Cong](https://github.com/JielongCong), [Jacob Parnell](https://github.com/compoundfraxure), [Jason Purinton](https://github.com/JasonPurinton)
 
-#### [Team Log and Retrospective](https://j3productions.github.io/minesweeper-js/documentation/j3-meeting-log-retrospective.docx)
+**[Black Panthas](https://github.com/ehiggins98/minesweeper-js)** - [Eric Higgins](https://github.com/ehiggins98), [Zak Kulphongpatana](https://github.com/zkulphong), [Josh High](https://github.com/hibernian99)
+
+#### [Team Log and Retrospective](https://ehiggins98.github.io/minesweeper-js/documentation/retrospective.pdf)
 
 ## Codebase Structure
 
-* [main.js](https://j3productions.github.io/minesweeper-js/documentation/function) - The only class file that interacts with index.html. Contains methods for form input processing, generating a board, and for left and right clicks. Interfaces only with Board object.
-* [board.js](https://j3productions.github.io/minesweeper-js/documentation/class/js/board.js~Board.html) - The class file that stores all game board methods and variables. Responsible for creating the board, planting the mines and adjacent numbers, and revealing/flagging tiles. Interfaces with Tile object.
-* [tile.js](https://j3productions.github.io/minesweeper-js/documentation/class/js/tile.js~Tile.html) - The class file that stores info for one tile of the game board. Stores adjacent number info, status as a mine and whether it has been flagged and/or revealed or not. Interfaces with no other class.
+* [interact.js](https://ehiggins98.github.io/minesweeper-js/documentation/function) - The only class file that interacts with index.html. Contains methods for form input processing, generating a board, and for left and right clicks. Interfaces only with Board object.
+* [board.js](https://ehiggins98.github.io/minesweeper-js/documentation/class/js/board.js~Board.html) - The class file that stores all game board methods and variables. Responsible for creating the board, planting the mines and adjacent numbers, and revealing/flagging tiles. Interfaces with Tile object.
+* [tile.js](https://ehiggins98.github.io/minesweeper-js/documentation/class/js/tile.js~Tile.html) - The class file that stores info for one tile of the game board. Stores adjacent number info, status as a mine and whether it has been flagged and/or revealed or not. Interfaces with no other class.
 
 ## Works Cited
 
