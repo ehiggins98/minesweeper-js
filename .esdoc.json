@@ -1,0 +1,15 @@
+{
+  "source": "./js",
+  "destination": "./documentation",
+  "plugins": [
+	{
+		"name": "esdoc-standard-plugin",
+		"option": {
+			"brand": {
+				"title": "Minesweeper",
+				"repository": "https://github.com/ehiggins98/minesweeper-js",
+				"author": "https://github.com/ehiggins98"
+			}
+		}
+	}]
+}

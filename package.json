@@ -1,0 +1,23 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "EECS 448 Project 1: Minesweeper - Written in Javascript and HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehiggins98/minesweeper-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehiggins98/minesweeper-js/issues"
+  },
+  "homepage": "https://github.com/ehiggins98/minesweeper-js#readme",
+  "dependencies": {
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0"
+  }
+}

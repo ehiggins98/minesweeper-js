@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "name": "Board#revealBombs",
+    "filePath": "js/board.js",
+    "lines": [
+      {
+        "lineNumber": 360,
+        "line": "  /**\r"
+      },
+      {
+        "lineNumber": 361,
+        "line": "   * This is a recursive function that will execute any one of block on the block been clicked. It will change all the tile's revealed = true, who have number 0. Even the tile set with flagged.\r"
+      },
+      {
+        "lineNumber": 362,
+        "line": "   * POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was clicked, set just that tile to be revealed. If a 0 was clicked, every adjacent tile not a mine is revealed. All spaces that were flagged that are now revealed are not flagged anymore.\r"
+      },
+      {
+        "lineNumber": 363,
+        "line": "   * @param {number} i Row property of tile being revealed.\r"
+      },
+      {
+        "lineNumber": 364,
+        "line": "   * @param {number} j Column property of tile being revealed.\r"
+      },
+      {
+        "lineNumber": 365,
+        "line": "   */\r"
+      },
+      {
+        "lineNumber": 366,
+        "line": "\r"
+      },
+      {
+        "lineNumber": 367,
+        "line": "  revealBombs() {\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "i",
+      "j"
+    ]
+  }
+]
