@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 2019,
+  "end": 2121,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 2019,
+    "end": 2121,
     "loc": {
       "start": {
         "line": 1,
@@ -30,8 +30,8 @@
     "body": [
       {
         "type": "ExportNamedDeclaration",
-        "start": 71,
-        "end": 2019,
+        "start": 75,
+        "end": 2121,
         "loc": {
           "start": {
             "line": 5,
@@ -46,8 +46,8 @@
         "source": null,
         "declaration": {
           "type": "ClassDeclaration",
-          "start": 78,
-          "end": 2019,
+          "start": 82,
+          "end": 2121,
           "loc": {
             "start": {
               "line": 5,
@@ -60,8 +60,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 84,
-            "end": 88,
+            "start": 88,
+            "end": 92,
             "loc": {
               "start": {
                 "line": 5,
@@ -79,8 +79,8 @@
           "superClass": null,
           "body": {
             "type": "ClassBody",
-            "start": 89,
-            "end": 2019,
+            "start": 93,
+            "end": 2121,
             "loc": {
               "start": {
                 "line": 5,
@@ -94,8 +94,8 @@
             "body": [
               {
                 "type": "ClassMethod",
-                "start": 342,
-                "end": 737,
+                "start": 351,
+                "end": 767,
                 "loc": {
                   "start": {
                     "line": 10,
@@ -110,8 +110,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 342,
-                  "end": 353,
+                  "start": 351,
+                  "end": 362,
                   "loc": {
                     "start": {
                       "line": 10,
@@ -134,8 +134,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 356,
-                  "end": 737,
+                  "start": 365,
+                  "end": 767,
                   "loc": {
                     "start": {
                       "line": 10,
@@ -149,8 +149,8 @@
                   "body": [
                     {
                       "type": "ExpressionStatement",
-                      "start": 425,
-                      "end": 445,
+                      "start": 439,
+                      "end": 459,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -163,8 +163,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 425,
-                        "end": 444,
+                        "start": 439,
+                        "end": 458,
                         "loc": {
                           "start": {
                             "line": 15,
@@ -178,8 +178,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 425,
-                          "end": 436,
+                          "start": 439,
+                          "end": 450,
                           "loc": {
                             "start": {
                               "line": 15,
@@ -192,8 +192,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 425,
-                            "end": 429,
+                            "start": 439,
+                            "end": 443,
                             "loc": {
                               "start": {
                                 "line": 15,
@@ -208,8 +208,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 430,
-                            "end": 436,
+                            "start": 444,
+                            "end": 450,
                             "loc": {
                               "start": {
                                 "line": 15,
@@ -228,8 +228,8 @@
                         },
                         "right": {
                           "type": "BooleanLiteral",
-                          "start": 439,
-                          "end": 444,
+                          "start": 453,
+                          "end": 458,
                           "loc": {
                             "start": {
                               "line": 15,
@@ -247,9 +247,9 @@
                       "leadingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* A mine or not a mine.\n     \t* @type {boolean}\n     \t",
-                          "start": 360,
-                          "end": 422,
+                          "value": "*\r\n\t\t* A mine or not a mine.\r\n     \t* @type {boolean}\r\n     \t",
+                          "start": 370,
+                          "end": 435,
                           "loc": {
                             "start": {
                               "line": 11,
@@ -265,9 +265,9 @@
                       "trailingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* Number of mines adjacent to the tile.\n     \t* @type {number}\n     \t",
-                          "start": 448,
-                          "end": 525,
+                          "value": "*\r\n\t\t* Number of mines adjacent to the tile.\r\n     \t* @type {number}\r\n     \t",
+                          "start": 463,
+                          "end": 543,
                           "loc": {
                             "start": {
                               "line": 16,
@@ -283,8 +283,8 @@
                     },
                     {
                       "type": "ExpressionStatement",
-                      "start": 528,
-                      "end": 544,
+                      "start": 547,
+                      "end": 563,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -297,8 +297,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 528,
-                        "end": 543,
+                        "start": 547,
+                        "end": 562,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -312,8 +312,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 528,
-                          "end": 539,
+                          "start": 547,
+                          "end": 558,
                           "loc": {
                             "start": {
                               "line": 20,
@@ -326,8 +326,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 528,
-                            "end": 532,
+                            "start": 547,
+                            "end": 551,
                             "loc": {
                               "start": {
                                 "line": 20,
@@ -342,8 +342,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 533,
-                            "end": 539,
+                            "start": 552,
+                            "end": 558,
                             "loc": {
                               "start": {
                                 "line": 20,
@@ -362,8 +362,8 @@
                         },
                         "right": {
                           "type": "NumericLiteral",
-                          "start": 542,
-                          "end": 543,
+                          "start": 561,
+                          "end": 562,
                           "loc": {
                             "start": {
                               "line": 20,
@@ -385,9 +385,9 @@
                       "leadingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* Number of mines adjacent to the tile.\n     \t* @type {number}\n     \t",
-                          "start": 448,
-                          "end": 525,
+                          "value": "*\r\n\t\t* Number of mines adjacent to the tile.\r\n     \t* @type {number}\r\n     \t",
+                          "start": 463,
+                          "end": 543,
                           "loc": {
                             "start": {
                               "line": 16,
@@ -403,9 +403,9 @@
                       "trailingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* Flag status of the tile.\n     \t* @type {boolean} \n     \t",
-                          "start": 547,
-                          "end": 613,
+                          "value": "*\r\n\t\t* Flag status of the tile.\r\n     \t* @type {boolean} \r\n     \t",
+                          "start": 567,
+                          "end": 636,
                           "loc": {
                             "start": {
                               "line": 21,
@@ -421,8 +421,8 @@
                     },
                     {
                       "type": "ExpressionStatement",
-                      "start": 616,
-                      "end": 637,
+                      "start": 640,
+                      "end": 661,
                       "loc": {
                         "start": {
                           "line": 25,
@@ -435,8 +435,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 616,
-                        "end": 636,
+                        "start": 640,
+                        "end": 660,
                         "loc": {
                           "start": {
                             "line": 25,
@@ -450,8 +450,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 616,
-                          "end": 628,
+                          "start": 640,
+                          "end": 652,
                           "loc": {
                             "start": {
                               "line": 25,
@@ -464,8 +464,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 616,
-                            "end": 620,
+                            "start": 640,
+                            "end": 644,
                             "loc": {
                               "start": {
                                 "line": 25,
@@ -480,8 +480,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 621,
-                            "end": 628,
+                            "start": 645,
+                            "end": 652,
                             "loc": {
                               "start": {
                                 "line": 25,
@@ -500,8 +500,8 @@
                         },
                         "right": {
                           "type": "BooleanLiteral",
-                          "start": 631,
-                          "end": 636,
+                          "start": 655,
+                          "end": 660,
                           "loc": {
                             "start": {
                               "line": 25,
@@ -519,9 +519,9 @@
                       "leadingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* Flag status of the tile.\n     \t* @type {boolean} \n     \t",
-                          "start": 547,
-                          "end": 613,
+                          "value": "*\r\n\t\t* Flag status of the tile.\r\n     \t* @type {boolean} \r\n     \t",
+                          "start": 567,
+                          "end": 636,
                           "loc": {
                             "start": {
                               "line": 21,
@@ -537,9 +537,9 @@
                       "trailingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* Revealed status of the tile.\n     \t* @type {boolean}\n     \t",
-                          "start": 640,
-                          "end": 709,
+                          "value": "*\r\n\t\t* Revealed status of the tile.\r\n     \t* @type {boolean}\r\n     \t",
+                          "start": 665,
+                          "end": 737,
                           "loc": {
                             "start": {
                               "line": 26,
@@ -555,8 +555,8 @@
                     },
                     {
                       "type": "ExpressionStatement",
-                      "start": 712,
-                      "end": 734,
+                      "start": 741,
+                      "end": 763,
                       "loc": {
                         "start": {
                           "line": 30,
@@ -569,8 +569,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 712,
-                        "end": 733,
+                        "start": 741,
+                        "end": 762,
                         "loc": {
                           "start": {
                             "line": 30,
@@ -584,8 +584,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 712,
-                          "end": 725,
+                          "start": 741,
+                          "end": 754,
                           "loc": {
                             "start": {
                               "line": 30,
@@ -598,8 +598,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 712,
-                            "end": 716,
+                            "start": 741,
+                            "end": 745,
                             "loc": {
                               "start": {
                                 "line": 30,
@@ -614,8 +614,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 717,
-                            "end": 725,
+                            "start": 746,
+                            "end": 754,
                             "loc": {
                               "start": {
                                 "line": 30,
@@ -634,8 +634,8 @@
                         },
                         "right": {
                           "type": "BooleanLiteral",
-                          "start": 728,
-                          "end": 733,
+                          "start": 757,
+                          "end": 762,
                           "loc": {
                             "start": {
                               "line": 30,
@@ -653,9 +653,9 @@
                       "leadingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n\t\t* Revealed status of the tile.\n     \t* @type {boolean}\n     \t",
-                          "start": 640,
-                          "end": 709,
+                          "value": "*\r\n\t\t* Revealed status of the tile.\r\n     \t* @type {boolean}\r\n     \t",
+                          "start": 665,
+                          "end": 737,
                           "loc": {
                             "start": {
                               "line": 26,
@@ -676,9 +676,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Constructor creates a tile that stores whether the tile is a mine or not, the number of mines adjacent to it, and whether the tile has been flagged or not.\n\t* POSTCONDITION: isMine, adjNum, flagged, and revealed, all now have set values.\n\t",
-                    "start": 92,
-                    "end": 340,
+                    "value": "*\r\n\t* Constructor creates a tile that stores whether the tile is a mine or not, the number of mines adjacent to it, and whether the tile has been flagged or not.\r\n\t* POSTCONDITION: isMine, adjNum, flagged, and revealed, all now have set values.\r\n\t",
+                    "start": 97,
+                    "end": 348,
                     "loc": {
                       "start": {
                         "line": 6,
@@ -694,9 +694,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets whether the tile is a mine or not.\n\t* @return {boolean} isMine\n\t",
-                    "start": 741,
-                    "end": 819,
+                    "value": "*\r\n\t* Gets whether the tile is a mine or not.\r\n\t* @return {boolean} isMine\r\n\t",
+                    "start": 773,
+                    "end": 854,
                     "loc": {
                       "start": {
                         "line": 33,
@@ -712,8 +712,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 821,
-                "end": 857,
+                "start": 857,
+                "end": 895,
                 "loc": {
                   "start": {
                     "line": 37,
@@ -728,8 +728,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 821,
-                  "end": 828,
+                  "start": 857,
+                  "end": 864,
                   "loc": {
                     "start": {
                       "line": 37,
@@ -752,8 +752,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 831,
-                  "end": 857,
+                  "start": 867,
+                  "end": 895,
                   "loc": {
                     "start": {
                       "line": 37,
@@ -767,8 +767,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 835,
-                      "end": 854,
+                      "start": 872,
+                      "end": 891,
                       "loc": {
                         "start": {
                           "line": 38,
@@ -781,8 +781,8 @@
                       },
                       "argument": {
                         "type": "MemberExpression",
-                        "start": 842,
-                        "end": 853,
+                        "start": 879,
+                        "end": 890,
                         "loc": {
                           "start": {
                             "line": 38,
@@ -795,8 +795,8 @@
                         },
                         "object": {
                           "type": "ThisExpression",
-                          "start": 842,
-                          "end": 846,
+                          "start": 879,
+                          "end": 883,
                           "loc": {
                             "start": {
                               "line": 38,
@@ -810,8 +810,8 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 847,
-                          "end": 853,
+                          "start": 884,
+                          "end": 890,
                           "loc": {
                             "start": {
                               "line": 38,
@@ -835,9 +835,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets whether the tile is a mine or not.\n\t* @return {boolean} isMine\n\t",
-                    "start": 741,
-                    "end": 819,
+                    "value": "*\r\n\t* Gets whether the tile is a mine or not.\r\n\t* @return {boolean} isMine\r\n\t",
+                    "start": 773,
+                    "end": 854,
                     "loc": {
                       "start": {
                         "line": 33,
@@ -853,9 +853,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets the number of mines adjacent to the tile.\n\t* @return {number} adjNum\n\t",
-                    "start": 861,
-                    "end": 945,
+                    "value": "*\r\n\t* Gets the number of mines adjacent to the tile.\r\n\t* @return {number} adjNum\r\n\t",
+                    "start": 901,
+                    "end": 988,
                     "loc": {
                       "start": {
                         "line": 41,
@@ -871,8 +871,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 947,
-                "end": 987,
+                "start": 991,
+                "end": 1033,
                 "loc": {
                   "start": {
                     "line": 45,
@@ -887,8 +887,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 947,
-                  "end": 958,
+                  "start": 991,
+                  "end": 1002,
                   "loc": {
                     "start": {
                       "line": 45,
@@ -911,8 +911,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 961,
-                  "end": 987,
+                  "start": 1005,
+                  "end": 1033,
                   "loc": {
                     "start": {
                       "line": 45,
@@ -926,8 +926,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 965,
-                      "end": 984,
+                      "start": 1010,
+                      "end": 1029,
                       "loc": {
                         "start": {
                           "line": 46,
@@ -940,8 +940,8 @@
                       },
                       "argument": {
                         "type": "MemberExpression",
-                        "start": 972,
-                        "end": 983,
+                        "start": 1017,
+                        "end": 1028,
                         "loc": {
                           "start": {
                             "line": 46,
@@ -954,8 +954,8 @@
                         },
                         "object": {
                           "type": "ThisExpression",
-                          "start": 972,
-                          "end": 976,
+                          "start": 1017,
+                          "end": 1021,
                           "loc": {
                             "start": {
                               "line": 46,
@@ -969,8 +969,8 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 977,
-                          "end": 983,
+                          "start": 1022,
+                          "end": 1028,
                           "loc": {
                             "start": {
                               "line": 46,
@@ -994,9 +994,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets the number of mines adjacent to the tile.\n\t* @return {number} adjNum\n\t",
-                    "start": 861,
-                    "end": 945,
+                    "value": "*\r\n\t* Gets the number of mines adjacent to the tile.\r\n\t* @return {number} adjNum\r\n\t",
+                    "start": 901,
+                    "end": 988,
                     "loc": {
                       "start": {
                         "line": 41,
@@ -1012,9 +1012,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets whether the tile has been flagged or not.\n\t* @return {boolean} flagged\n\t",
-                    "start": 991,
-                    "end": 1077,
+                    "value": "*\r\n\t* Gets whether the tile has been flagged or not.\r\n\t* @return {boolean} flagged\r\n\t",
+                    "start": 1039,
+                    "end": 1128,
                     "loc": {
                       "start": {
                         "line": 49,
@@ -1030,8 +1030,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 1079,
-                "end": 1119,
+                "start": 1131,
+                "end": 1173,
                 "loc": {
                   "start": {
                     "line": 53,
@@ -1046,8 +1046,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 1079,
-                  "end": 1089,
+                  "start": 1131,
+                  "end": 1141,
                   "loc": {
                     "start": {
                       "line": 53,
@@ -1070,8 +1070,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 1092,
-                  "end": 1119,
+                  "start": 1144,
+                  "end": 1173,
                   "loc": {
                     "start": {
                       "line": 53,
@@ -1085,8 +1085,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 1096,
-                      "end": 1116,
+                      "start": 1149,
+                      "end": 1169,
                       "loc": {
                         "start": {
                           "line": 54,
@@ -1099,8 +1099,8 @@
                       },
                       "argument": {
                         "type": "MemberExpression",
-                        "start": 1103,
-                        "end": 1115,
+                        "start": 1156,
+                        "end": 1168,
                         "loc": {
                           "start": {
                             "line": 54,
@@ -1113,8 +1113,8 @@
                         },
                         "object": {
                           "type": "ThisExpression",
-                          "start": 1103,
-                          "end": 1107,
+                          "start": 1156,
+                          "end": 1160,
                           "loc": {
                             "start": {
                               "line": 54,
@@ -1128,8 +1128,8 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 1108,
-                          "end": 1115,
+                          "start": 1161,
+                          "end": 1168,
                           "loc": {
                             "start": {
                               "line": 54,
@@ -1153,9 +1153,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets whether the tile has been flagged or not.\n\t* @return {boolean} flagged\n\t",
-                    "start": 991,
-                    "end": 1077,
+                    "value": "*\r\n\t* Gets whether the tile has been flagged or not.\r\n\t* @return {boolean} flagged\r\n\t",
+                    "start": 1039,
+                    "end": 1128,
                     "loc": {
                       "start": {
                         "line": 49,
@@ -1171,9 +1171,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets whether the tile has been revealed or not.\n\t* @return {boolean} flagged\n\t",
-                    "start": 1123,
-                    "end": 1210,
+                    "value": "*\r\n\t* Gets whether the tile has been revealed or not.\r\n\t* @return {boolean} flagged\r\n\t",
+                    "start": 1179,
+                    "end": 1269,
                     "loc": {
                       "start": {
                         "line": 57,
@@ -1189,8 +1189,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 1212,
-                "end": 1254,
+                "start": 1272,
+                "end": 1316,
                 "loc": {
                   "start": {
                     "line": 61,
@@ -1205,8 +1205,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 1212,
-                  "end": 1223,
+                  "start": 1272,
+                  "end": 1283,
                   "loc": {
                     "start": {
                       "line": 61,
@@ -1229,8 +1229,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 1226,
-                  "end": 1254,
+                  "start": 1286,
+                  "end": 1316,
                   "loc": {
                     "start": {
                       "line": 61,
@@ -1244,8 +1244,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 1230,
-                      "end": 1251,
+                      "start": 1291,
+                      "end": 1312,
                       "loc": {
                         "start": {
                           "line": 62,
@@ -1258,8 +1258,8 @@
                       },
                       "argument": {
                         "type": "MemberExpression",
-                        "start": 1237,
-                        "end": 1250,
+                        "start": 1298,
+                        "end": 1311,
                         "loc": {
                           "start": {
                             "line": 62,
@@ -1272,8 +1272,8 @@
                         },
                         "object": {
                           "type": "ThisExpression",
-                          "start": 1237,
-                          "end": 1241,
+                          "start": 1298,
+                          "end": 1302,
                           "loc": {
                             "start": {
                               "line": 62,
@@ -1287,8 +1287,8 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 1242,
-                          "end": 1250,
+                          "start": 1303,
+                          "end": 1311,
                           "loc": {
                             "start": {
                               "line": 62,
@@ -1312,9 +1312,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Gets whether the tile has been revealed or not.\n\t* @return {boolean} flagged\n\t",
-                    "start": 1123,
-                    "end": 1210,
+                    "value": "*\r\n\t* Gets whether the tile has been revealed or not.\r\n\t* @return {boolean} flagged\r\n\t",
+                    "start": 1179,
+                    "end": 1269,
                     "loc": {
                       "start": {
                         "line": 57,
@@ -1330,9 +1330,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Sets the tile's status to be a mine.\n\t* POSTCONDITION: isMine is true.\n\t",
-                    "start": 1258,
-                    "end": 1339,
+                    "value": "*\r\n\t* Sets the tile's status to be a mine.\r\n\t* POSTCONDITION: isMine is true.\r\n\t",
+                    "start": 1322,
+                    "end": 1406,
                     "loc": {
                       "start": {
                         "line": 65,
@@ -1348,8 +1348,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 1341,
-                "end": 1377,
+                "start": 1409,
+                "end": 1447,
                 "loc": {
                   "start": {
                     "line": 69,
@@ -1364,8 +1364,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 1341,
-                  "end": 1348,
+                  "start": 1409,
+                  "end": 1416,
                   "loc": {
                     "start": {
                       "line": 69,
@@ -1388,8 +1388,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 1351,
-                  "end": 1377,
+                  "start": 1419,
+                  "end": 1447,
                   "loc": {
                     "start": {
                       "line": 69,
@@ -1403,8 +1403,8 @@
                   "body": [
                     {
                       "type": "ExpressionStatement",
-                      "start": 1355,
-                      "end": 1374,
+                      "start": 1424,
+                      "end": 1443,
                       "loc": {
                         "start": {
                           "line": 70,
@@ -1417,8 +1417,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 1355,
-                        "end": 1373,
+                        "start": 1424,
+                        "end": 1442,
                         "loc": {
                           "start": {
                             "line": 70,
@@ -1432,8 +1432,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 1355,
-                          "end": 1366,
+                          "start": 1424,
+                          "end": 1435,
                           "loc": {
                             "start": {
                               "line": 70,
@@ -1446,8 +1446,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 1355,
-                            "end": 1359,
+                            "start": 1424,
+                            "end": 1428,
                             "loc": {
                               "start": {
                                 "line": 70,
@@ -1461,8 +1461,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 1360,
-                            "end": 1366,
+                            "start": 1429,
+                            "end": 1435,
                             "loc": {
                               "start": {
                                 "line": 70,
@@ -1480,8 +1480,8 @@
                         },
                         "right": {
                           "type": "BooleanLiteral",
-                          "start": 1369,
-                          "end": 1373,
+                          "start": 1438,
+                          "end": 1442,
                           "loc": {
                             "start": {
                               "line": 70,
@@ -1503,9 +1503,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Sets the tile's status to be a mine.\n\t* POSTCONDITION: isMine is true.\n\t",
-                    "start": 1258,
-                    "end": 1339,
+                    "value": "*\r\n\t* Sets the tile's status to be a mine.\r\n\t* POSTCONDITION: isMine is true.\r\n\t",
+                    "start": 1322,
+                    "end": 1406,
                     "loc": {
                       "start": {
                         "line": 65,
@@ -1521,9 +1521,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Sets the number of mines adjacent to the tile.\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\n\t",
-                    "start": 1381,
-                    "end": 1583,
+                    "value": "*\r\n\t* Sets the number of mines adjacent to the tile.\r\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\r\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\r\n\t",
+                    "start": 1453,
+                    "end": 1659,
                     "loc": {
                       "start": {
                         "line": 73,
@@ -1539,8 +1539,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 1585,
-                "end": 1627,
+                "start": 1662,
+                "end": 1706,
                 "loc": {
                   "start": {
                     "line": 78,
@@ -1555,8 +1555,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 1585,
-                  "end": 1596,
+                  "start": 1662,
+                  "end": 1673,
                   "loc": {
                     "start": {
                       "line": 78,
@@ -1579,8 +1579,8 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 1597,
-                    "end": 1600,
+                    "start": 1674,
+                    "end": 1677,
                     "loc": {
                       "start": {
                         "line": 78,
@@ -1597,8 +1597,8 @@
                 ],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 1602,
-                  "end": 1627,
+                  "start": 1679,
+                  "end": 1706,
                   "loc": {
                     "start": {
                       "line": 78,
@@ -1612,8 +1612,8 @@
                   "body": [
                     {
                       "type": "ExpressionStatement",
-                      "start": 1606,
-                      "end": 1624,
+                      "start": 1684,
+                      "end": 1702,
                       "loc": {
                         "start": {
                           "line": 79,
@@ -1626,8 +1626,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 1606,
-                        "end": 1623,
+                        "start": 1684,
+                        "end": 1701,
                         "loc": {
                           "start": {
                             "line": 79,
@@ -1641,8 +1641,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 1606,
-                          "end": 1617,
+                          "start": 1684,
+                          "end": 1695,
                           "loc": {
                             "start": {
                               "line": 79,
@@ -1655,8 +1655,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 1606,
-                            "end": 1610,
+                            "start": 1684,
+                            "end": 1688,
                             "loc": {
                               "start": {
                                 "line": 79,
@@ -1670,8 +1670,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 1611,
-                            "end": 1617,
+                            "start": 1689,
+                            "end": 1695,
                             "loc": {
                               "start": {
                                 "line": 79,
@@ -1689,8 +1689,8 @@
                         },
                         "right": {
                           "type": "Identifier",
-                          "start": 1620,
-                          "end": 1623,
+                          "start": 1698,
+                          "end": 1701,
                           "loc": {
                             "start": {
                               "line": 79,
@@ -1713,9 +1713,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Sets the number of mines adjacent to the tile.\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\n\t",
-                    "start": 1381,
-                    "end": 1583,
+                    "value": "*\r\n\t* Sets the number of mines adjacent to the tile.\r\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\r\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\r\n\t",
+                    "start": 1453,
+                    "end": 1659,
                     "loc": {
                       "start": {
                         "line": 73,
@@ -1731,9 +1731,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\n\t* POSTCONDTION: flagged is inverted\n\t",
-                    "start": 1631,
-                    "end": 1782,
+                    "value": "*\r\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\r\n\t* POSTCONDTION: flagged is inverted\r\n\t",
+                    "start": 1712,
+                    "end": 1866,
                     "loc": {
                       "start": {
                         "line": 82,
@@ -1749,8 +1749,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 1784,
-                "end": 1883,
+                "start": 1869,
+                "end": 1975,
                 "loc": {
                   "start": {
                     "line": 86,
@@ -1765,8 +1765,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 1784,
-                  "end": 1788,
+                  "start": 1869,
+                  "end": 1873,
                   "loc": {
                     "start": {
                       "line": 86,
@@ -1789,8 +1789,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 1791,
-                  "end": 1883,
+                  "start": 1876,
+                  "end": 1975,
                   "loc": {
                     "start": {
                       "line": 86,
@@ -1804,8 +1804,8 @@
                   "body": [
                     {
                       "type": "IfStatement",
-                      "start": 1795,
-                      "end": 1880,
+                      "start": 1881,
+                      "end": 1971,
                       "loc": {
                         "start": {
                           "line": 87,
@@ -1818,8 +1818,8 @@
                       },
                       "test": {
                         "type": "MemberExpression",
-                        "start": 1799,
-                        "end": 1811,
+                        "start": 1885,
+                        "end": 1897,
                         "loc": {
                           "start": {
                             "line": 87,
@@ -1832,8 +1832,8 @@
                         },
                         "object": {
                           "type": "ThisExpression",
-                          "start": 1799,
-                          "end": 1803,
+                          "start": 1885,
+                          "end": 1889,
                           "loc": {
                             "start": {
                               "line": 87,
@@ -1847,8 +1847,8 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 1804,
-                          "end": 1811,
+                          "start": 1890,
+                          "end": 1897,
                           "loc": {
                             "start": {
                               "line": 87,
@@ -1866,8 +1866,8 @@
                       },
                       "consequent": {
                         "type": "BlockStatement",
-                        "start": 1813,
-                        "end": 1843,
+                        "start": 1899,
+                        "end": 1931,
                         "loc": {
                           "start": {
                             "line": 87,
@@ -1881,8 +1881,8 @@
                         "body": [
                           {
                             "type": "ExpressionStatement",
-                            "start": 1818,
-                            "end": 1839,
+                            "start": 1905,
+                            "end": 1926,
                             "loc": {
                               "start": {
                                 "line": 88,
@@ -1895,8 +1895,8 @@
                             },
                             "expression": {
                               "type": "AssignmentExpression",
-                              "start": 1818,
-                              "end": 1838,
+                              "start": 1905,
+                              "end": 1925,
                               "loc": {
                                 "start": {
                                   "line": 88,
@@ -1910,8 +1910,8 @@
                               "operator": "=",
                               "left": {
                                 "type": "MemberExpression",
-                                "start": 1818,
-                                "end": 1830,
+                                "start": 1905,
+                                "end": 1917,
                                 "loc": {
                                   "start": {
                                     "line": 88,
@@ -1924,8 +1924,8 @@
                                 },
                                 "object": {
                                   "type": "ThisExpression",
-                                  "start": 1818,
-                                  "end": 1822,
+                                  "start": 1905,
+                                  "end": 1909,
                                   "loc": {
                                     "start": {
                                       "line": 88,
@@ -1939,8 +1939,8 @@
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 1823,
-                                  "end": 1830,
+                                  "start": 1910,
+                                  "end": 1917,
                                   "loc": {
                                     "start": {
                                       "line": 88,
@@ -1958,8 +1958,8 @@
                               },
                               "right": {
                                 "type": "BooleanLiteral",
-                                "start": 1833,
-                                "end": 1838,
+                                "start": 1920,
+                                "end": 1925,
                                 "loc": {
                                   "start": {
                                     "line": 88,
@@ -1979,8 +1979,8 @@
                       },
                       "alternate": {
                         "type": "BlockStatement",
-                        "start": 1851,
-                        "end": 1880,
+                        "start": 1940,
+                        "end": 1971,
                         "loc": {
                           "start": {
                             "line": 90,
@@ -1994,8 +1994,8 @@
                         "body": [
                           {
                             "type": "ExpressionStatement",
-                            "start": 1856,
-                            "end": 1876,
+                            "start": 1946,
+                            "end": 1966,
                             "loc": {
                               "start": {
                                 "line": 91,
@@ -2008,8 +2008,8 @@
                             },
                             "expression": {
                               "type": "AssignmentExpression",
-                              "start": 1856,
-                              "end": 1875,
+                              "start": 1946,
+                              "end": 1965,
                               "loc": {
                                 "start": {
                                   "line": 91,
@@ -2023,8 +2023,8 @@
                               "operator": "=",
                               "left": {
                                 "type": "MemberExpression",
-                                "start": 1856,
-                                "end": 1868,
+                                "start": 1946,
+                                "end": 1958,
                                 "loc": {
                                   "start": {
                                     "line": 91,
@@ -2037,8 +2037,8 @@
                                 },
                                 "object": {
                                   "type": "ThisExpression",
-                                  "start": 1856,
-                                  "end": 1860,
+                                  "start": 1946,
+                                  "end": 1950,
                                   "loc": {
                                     "start": {
                                       "line": 91,
@@ -2052,8 +2052,8 @@
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 1861,
-                                  "end": 1868,
+                                  "start": 1951,
+                                  "end": 1958,
                                   "loc": {
                                     "start": {
                                       "line": 91,
@@ -2071,8 +2071,8 @@
                               },
                               "right": {
                                 "type": "BooleanLiteral",
-                                "start": 1871,
-                                "end": 1875,
+                                "start": 1961,
+                                "end": 1965,
                                 "loc": {
                                   "start": {
                                     "line": 91,
@@ -2098,9 +2098,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\n\t* POSTCONDTION: flagged is inverted\n\t",
-                    "start": 1631,
-                    "end": 1782,
+                    "value": "*\r\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\r\n\t* POSTCONDTION: flagged is inverted\r\n\t",
+                    "start": 1712,
+                    "end": 1866,
                     "loc": {
                       "start": {
                         "line": 82,
@@ -2116,9 +2116,9 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Reveals the tile, setting revealed to true.\n\t* POSTCONDTION: revealed is true.\n\t",
-                    "start": 1887,
-                    "end": 1976,
+                    "value": "*\r\n\t* Reveals the tile, setting revealed to true.\r\n\t* POSTCONDTION: revealed is true.\r\n\t",
+                    "start": 1981,
+                    "end": 2073,
                     "loc": {
                       "start": {
                         "line": 95,
@@ -2134,8 +2134,8 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 1978,
-                "end": 2015,
+                "start": 2076,
+                "end": 2115,
                 "loc": {
                   "start": {
                     "line": 99,
@@ -2150,8 +2150,8 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 1978,
-                  "end": 1984,
+                  "start": 2076,
+                  "end": 2082,
                   "loc": {
                     "start": {
                       "line": 99,
@@ -2174,8 +2174,8 @@
                 "params": [],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 1987,
-                  "end": 2015,
+                  "start": 2085,
+                  "end": 2115,
                   "loc": {
                     "start": {
                       "line": 99,
@@ -2189,8 +2189,8 @@
                   "body": [
                     {
                       "type": "ExpressionStatement",
-                      "start": 1991,
-                      "end": 2012,
+                      "start": 2090,
+                      "end": 2111,
                       "loc": {
                         "start": {
                           "line": 100,
@@ -2203,8 +2203,8 @@
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 1991,
-                        "end": 2011,
+                        "start": 2090,
+                        "end": 2110,
                         "loc": {
                           "start": {
                             "line": 100,
@@ -2218,8 +2218,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 1991,
-                          "end": 2004,
+                          "start": 2090,
+                          "end": 2103,
                           "loc": {
                             "start": {
                               "line": 100,
@@ -2232,8 +2232,8 @@
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 1991,
-                            "end": 1995,
+                            "start": 2090,
+                            "end": 2094,
                             "loc": {
                               "start": {
                                 "line": 100,
@@ -2247,8 +2247,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 1996,
-                            "end": 2004,
+                            "start": 2095,
+                            "end": 2103,
                             "loc": {
                               "start": {
                                 "line": 100,
@@ -2266,8 +2266,8 @@
                         },
                         "right": {
                           "type": "BooleanLiteral",
-                          "start": 2007,
-                          "end": 2011,
+                          "start": 2106,
+                          "end": 2110,
                           "loc": {
                             "start": {
                               "line": 100,
@@ -2288,9 +2288,9 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n\t* Reveals the tile, setting revealed to true.\n\t* POSTCONDTION: revealed is true.\n\t",
-                    "start": 1887,
-                    "end": 1976,
+                    "value": "*\r\n\t* Reveals the tile, setting revealed to true.\r\n\t* POSTCONDTION: revealed is true.\r\n\t",
+                    "start": 1981,
+                    "end": 2073,
                     "loc": {
                       "start": {
                         "line": 95,
@@ -2309,9 +2309,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * A class for Tile, the element inside a board.\n ",
-              "start": 14,
-              "end": 70,
+              "value": "*\r\n * A class for Tile, the element inside a board.\r\n ",
+              "start": 15,
+              "end": 73,
               "loc": {
                 "start": {
                   "line": 2,
@@ -2329,9 +2329,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * A class for Tile, the element inside a board.\n ",
-            "start": 14,
-            "end": 70,
+            "value": "*\r\n * A class for Tile, the element inside a board.\r\n ",
+            "start": 15,
+            "end": 73,
             "loc": {
               "start": {
                 "line": 2,
@@ -2385,9 +2385,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * A class for Tile, the element inside a board.\n ",
-            "start": 14,
-            "end": 70,
+            "value": "*\r\n * A class for Tile, the element inside a board.\r\n ",
+            "start": 15,
+            "end": 73,
             "loc": {
               "start": {
                 "line": 2,
@@ -2406,9 +2406,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * A class for Tile, the element inside a board.\n ",
-      "start": 14,
-      "end": 70,
+      "value": "*\r\n * A class for Tile, the element inside a board.\r\n ",
+      "start": 15,
+      "end": 73,
       "loc": {
         "start": {
           "line": 2,
@@ -2422,9 +2422,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Constructor creates a tile that stores whether the tile is a mine or not, the number of mines adjacent to it, and whether the tile has been flagged or not.\n\t* POSTCONDITION: isMine, adjNum, flagged, and revealed, all now have set values.\n\t",
-      "start": 92,
-      "end": 340,
+      "value": "*\r\n\t* Constructor creates a tile that stores whether the tile is a mine or not, the number of mines adjacent to it, and whether the tile has been flagged or not.\r\n\t* POSTCONDITION: isMine, adjNum, flagged, and revealed, all now have set values.\r\n\t",
+      "start": 97,
+      "end": 348,
       "loc": {
         "start": {
           "line": 6,
@@ -2438,9 +2438,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* A mine or not a mine.\n     \t* @type {boolean}\n     \t",
-      "start": 360,
-      "end": 422,
+      "value": "*\r\n\t\t* A mine or not a mine.\r\n     \t* @type {boolean}\r\n     \t",
+      "start": 370,
+      "end": 435,
       "loc": {
         "start": {
           "line": 11,
@@ -2454,9 +2454,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* Number of mines adjacent to the tile.\n     \t* @type {number}\n     \t",
-      "start": 448,
-      "end": 525,
+      "value": "*\r\n\t\t* Number of mines adjacent to the tile.\r\n     \t* @type {number}\r\n     \t",
+      "start": 463,
+      "end": 543,
       "loc": {
         "start": {
           "line": 16,
@@ -2470,9 +2470,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* Flag status of the tile.\n     \t* @type {boolean} \n     \t",
-      "start": 547,
-      "end": 613,
+      "value": "*\r\n\t\t* Flag status of the tile.\r\n     \t* @type {boolean} \r\n     \t",
+      "start": 567,
+      "end": 636,
       "loc": {
         "start": {
           "line": 21,
@@ -2486,9 +2486,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* Revealed status of the tile.\n     \t* @type {boolean}\n     \t",
-      "start": 640,
-      "end": 709,
+      "value": "*\r\n\t\t* Revealed status of the tile.\r\n     \t* @type {boolean}\r\n     \t",
+      "start": 665,
+      "end": 737,
       "loc": {
         "start": {
           "line": 26,
@@ -2502,9 +2502,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets whether the tile is a mine or not.\n\t* @return {boolean} isMine\n\t",
-      "start": 741,
-      "end": 819,
+      "value": "*\r\n\t* Gets whether the tile is a mine or not.\r\n\t* @return {boolean} isMine\r\n\t",
+      "start": 773,
+      "end": 854,
       "loc": {
         "start": {
           "line": 33,
@@ -2518,9 +2518,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets the number of mines adjacent to the tile.\n\t* @return {number} adjNum\n\t",
-      "start": 861,
-      "end": 945,
+      "value": "*\r\n\t* Gets the number of mines adjacent to the tile.\r\n\t* @return {number} adjNum\r\n\t",
+      "start": 901,
+      "end": 988,
       "loc": {
         "start": {
           "line": 41,
@@ -2534,9 +2534,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets whether the tile has been flagged or not.\n\t* @return {boolean} flagged\n\t",
-      "start": 991,
-      "end": 1077,
+      "value": "*\r\n\t* Gets whether the tile has been flagged or not.\r\n\t* @return {boolean} flagged\r\n\t",
+      "start": 1039,
+      "end": 1128,
       "loc": {
         "start": {
           "line": 49,
@@ -2550,9 +2550,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets whether the tile has been revealed or not.\n\t* @return {boolean} flagged\n\t",
-      "start": 1123,
-      "end": 1210,
+      "value": "*\r\n\t* Gets whether the tile has been revealed or not.\r\n\t* @return {boolean} flagged\r\n\t",
+      "start": 1179,
+      "end": 1269,
       "loc": {
         "start": {
           "line": 57,
@@ -2566,9 +2566,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Sets the tile's status to be a mine.\n\t* POSTCONDITION: isMine is true.\n\t",
-      "start": 1258,
-      "end": 1339,
+      "value": "*\r\n\t* Sets the tile's status to be a mine.\r\n\t* POSTCONDITION: isMine is true.\r\n\t",
+      "start": 1322,
+      "end": 1406,
       "loc": {
         "start": {
           "line": 65,
@@ -2582,9 +2582,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Sets the number of mines adjacent to the tile.\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\n\t",
-      "start": 1381,
-      "end": 1583,
+      "value": "*\r\n\t* Sets the number of mines adjacent to the tile.\r\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\r\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\r\n\t",
+      "start": 1453,
+      "end": 1659,
       "loc": {
         "start": {
           "line": 73,
@@ -2598,9 +2598,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\n\t* POSTCONDTION: flagged is inverted\n\t",
-      "start": 1631,
-      "end": 1782,
+      "value": "*\r\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\r\n\t* POSTCONDTION: flagged is inverted\r\n\t",
+      "start": 1712,
+      "end": 1866,
       "loc": {
         "start": {
           "line": 82,
@@ -2614,9 +2614,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Reveals the tile, setting revealed to true.\n\t* POSTCONDTION: revealed is true.\n\t",
-      "start": 1887,
-      "end": 1976,
+      "value": "*\r\n\t* Reveals the tile, setting revealed to true.\r\n\t* POSTCONDTION: revealed is true.\r\n\t",
+      "start": 1981,
+      "end": 2073,
       "loc": {
         "start": {
           "line": 95,
@@ -2685,9 +2685,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * A class for Tile, the element inside a board.\n ",
-      "start": 14,
-      "end": 70,
+      "value": "*\r\n * A class for Tile, the element inside a board.\r\n ",
+      "start": 15,
+      "end": 73,
       "loc": {
         "start": {
           "line": 2,
@@ -2714,8 +2714,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 71,
-      "end": 77,
+      "start": 75,
+      "end": 81,
       "loc": {
         "start": {
           "line": 5,
@@ -2742,8 +2742,8 @@
         "updateContext": null
       },
       "value": "class",
-      "start": 78,
-      "end": 83,
+      "start": 82,
+      "end": 87,
       "loc": {
         "start": {
           "line": 5,
@@ -2768,8 +2768,8 @@
         "binop": null
       },
       "value": "Tile",
-      "start": 84,
-      "end": 88,
+      "start": 88,
+      "end": 92,
       "loc": {
         "start": {
           "line": 5,
@@ -2793,8 +2793,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 89,
-      "end": 90,
+      "start": 93,
+      "end": 94,
       "loc": {
         "start": {
           "line": 5,
@@ -2808,9 +2808,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Constructor creates a tile that stores whether the tile is a mine or not, the number of mines adjacent to it, and whether the tile has been flagged or not.\n\t* POSTCONDITION: isMine, adjNum, flagged, and revealed, all now have set values.\n\t",
-      "start": 92,
-      "end": 340,
+      "value": "*\r\n\t* Constructor creates a tile that stores whether the tile is a mine or not, the number of mines adjacent to it, and whether the tile has been flagged or not.\r\n\t* POSTCONDITION: isMine, adjNum, flagged, and revealed, all now have set values.\r\n\t",
+      "start": 97,
+      "end": 348,
       "loc": {
         "start": {
           "line": 6,
@@ -2835,8 +2835,8 @@
         "binop": null
       },
       "value": "constructor",
-      "start": 342,
-      "end": 353,
+      "start": 351,
+      "end": 362,
       "loc": {
         "start": {
           "line": 10,
@@ -2860,8 +2860,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 353,
-      "end": 354,
+      "start": 362,
+      "end": 363,
       "loc": {
         "start": {
           "line": 10,
@@ -2885,8 +2885,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 354,
-      "end": 355,
+      "start": 363,
+      "end": 364,
       "loc": {
         "start": {
           "line": 10,
@@ -2910,8 +2910,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 356,
-      "end": 357,
+      "start": 365,
+      "end": 366,
       "loc": {
         "start": {
           "line": 10,
@@ -2925,9 +2925,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* A mine or not a mine.\n     \t* @type {boolean}\n     \t",
-      "start": 360,
-      "end": 422,
+      "value": "*\r\n\t\t* A mine or not a mine.\r\n     \t* @type {boolean}\r\n     \t",
+      "start": 370,
+      "end": 435,
       "loc": {
         "start": {
           "line": 11,
@@ -2954,8 +2954,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 425,
-      "end": 429,
+      "start": 439,
+      "end": 443,
       "loc": {
         "start": {
           "line": 15,
@@ -2980,8 +2980,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 429,
-      "end": 430,
+      "start": 443,
+      "end": 444,
       "loc": {
         "start": {
           "line": 15,
@@ -3006,8 +3006,8 @@
         "binop": null
       },
       "value": "isMine",
-      "start": 430,
-      "end": 436,
+      "start": 444,
+      "end": 450,
       "loc": {
         "start": {
           "line": 15,
@@ -3033,8 +3033,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 437,
-      "end": 438,
+      "start": 451,
+      "end": 452,
       "loc": {
         "start": {
           "line": 15,
@@ -3061,8 +3061,8 @@
         "updateContext": null
       },
       "value": "false",
-      "start": 439,
-      "end": 444,
+      "start": 453,
+      "end": 458,
       "loc": {
         "start": {
           "line": 15,
@@ -3087,8 +3087,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 444,
-      "end": 445,
+      "start": 458,
+      "end": 459,
       "loc": {
         "start": {
           "line": 15,
@@ -3102,9 +3102,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* Number of mines adjacent to the tile.\n     \t* @type {number}\n     \t",
-      "start": 448,
-      "end": 525,
+      "value": "*\r\n\t\t* Number of mines adjacent to the tile.\r\n     \t* @type {number}\r\n     \t",
+      "start": 463,
+      "end": 543,
       "loc": {
         "start": {
           "line": 16,
@@ -3131,8 +3131,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 528,
-      "end": 532,
+      "start": 547,
+      "end": 551,
       "loc": {
         "start": {
           "line": 20,
@@ -3157,8 +3157,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 532,
-      "end": 533,
+      "start": 551,
+      "end": 552,
       "loc": {
         "start": {
           "line": 20,
@@ -3183,8 +3183,8 @@
         "binop": null
       },
       "value": "adjNum",
-      "start": 533,
-      "end": 539,
+      "start": 552,
+      "end": 558,
       "loc": {
         "start": {
           "line": 20,
@@ -3210,8 +3210,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 540,
-      "end": 541,
+      "start": 559,
+      "end": 560,
       "loc": {
         "start": {
           "line": 20,
@@ -3237,8 +3237,8 @@
         "updateContext": null
       },
       "value": 9,
-      "start": 542,
-      "end": 543,
+      "start": 561,
+      "end": 562,
       "loc": {
         "start": {
           "line": 20,
@@ -3263,8 +3263,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 543,
-      "end": 544,
+      "start": 562,
+      "end": 563,
       "loc": {
         "start": {
           "line": 20,
@@ -3278,9 +3278,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* Flag status of the tile.\n     \t* @type {boolean} \n     \t",
-      "start": 547,
-      "end": 613,
+      "value": "*\r\n\t\t* Flag status of the tile.\r\n     \t* @type {boolean} \r\n     \t",
+      "start": 567,
+      "end": 636,
       "loc": {
         "start": {
           "line": 21,
@@ -3307,8 +3307,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 616,
-      "end": 620,
+      "start": 640,
+      "end": 644,
       "loc": {
         "start": {
           "line": 25,
@@ -3333,8 +3333,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 620,
-      "end": 621,
+      "start": 644,
+      "end": 645,
       "loc": {
         "start": {
           "line": 25,
@@ -3359,8 +3359,8 @@
         "binop": null
       },
       "value": "flagged",
-      "start": 621,
-      "end": 628,
+      "start": 645,
+      "end": 652,
       "loc": {
         "start": {
           "line": 25,
@@ -3386,8 +3386,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 629,
-      "end": 630,
+      "start": 653,
+      "end": 654,
       "loc": {
         "start": {
           "line": 25,
@@ -3414,8 +3414,8 @@
         "updateContext": null
       },
       "value": "false",
-      "start": 631,
-      "end": 636,
+      "start": 655,
+      "end": 660,
       "loc": {
         "start": {
           "line": 25,
@@ -3440,8 +3440,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 636,
-      "end": 637,
+      "start": 660,
+      "end": 661,
       "loc": {
         "start": {
           "line": 25,
@@ -3455,9 +3455,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t\t* Revealed status of the tile.\n     \t* @type {boolean}\n     \t",
-      "start": 640,
-      "end": 709,
+      "value": "*\r\n\t\t* Revealed status of the tile.\r\n     \t* @type {boolean}\r\n     \t",
+      "start": 665,
+      "end": 737,
       "loc": {
         "start": {
           "line": 26,
@@ -3484,8 +3484,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 712,
-      "end": 716,
+      "start": 741,
+      "end": 745,
       "loc": {
         "start": {
           "line": 30,
@@ -3510,8 +3510,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 716,
-      "end": 717,
+      "start": 745,
+      "end": 746,
       "loc": {
         "start": {
           "line": 30,
@@ -3536,8 +3536,8 @@
         "binop": null
       },
       "value": "revealed",
-      "start": 717,
-      "end": 725,
+      "start": 746,
+      "end": 754,
       "loc": {
         "start": {
           "line": 30,
@@ -3563,8 +3563,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 726,
-      "end": 727,
+      "start": 755,
+      "end": 756,
       "loc": {
         "start": {
           "line": 30,
@@ -3591,8 +3591,8 @@
         "updateContext": null
       },
       "value": "false",
-      "start": 728,
-      "end": 733,
+      "start": 757,
+      "end": 762,
       "loc": {
         "start": {
           "line": 30,
@@ -3617,8 +3617,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 733,
-      "end": 734,
+      "start": 762,
+      "end": 763,
       "loc": {
         "start": {
           "line": 30,
@@ -3642,8 +3642,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 736,
-      "end": 737,
+      "start": 766,
+      "end": 767,
       "loc": {
         "start": {
           "line": 31,
@@ -3657,9 +3657,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets whether the tile is a mine or not.\n\t* @return {boolean} isMine\n\t",
-      "start": 741,
-      "end": 819,
+      "value": "*\r\n\t* Gets whether the tile is a mine or not.\r\n\t* @return {boolean} isMine\r\n\t",
+      "start": 773,
+      "end": 854,
       "loc": {
         "start": {
           "line": 33,
@@ -3684,8 +3684,8 @@
         "binop": null
       },
       "value": "getMine",
-      "start": 821,
-      "end": 828,
+      "start": 857,
+      "end": 864,
       "loc": {
         "start": {
           "line": 37,
@@ -3709,8 +3709,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 828,
-      "end": 829,
+      "start": 864,
+      "end": 865,
       "loc": {
         "start": {
           "line": 37,
@@ -3734,8 +3734,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 829,
-      "end": 830,
+      "start": 865,
+      "end": 866,
       "loc": {
         "start": {
           "line": 37,
@@ -3759,8 +3759,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 831,
-      "end": 832,
+      "start": 867,
+      "end": 868,
       "loc": {
         "start": {
           "line": 37,
@@ -3787,8 +3787,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 835,
-      "end": 841,
+      "start": 872,
+      "end": 878,
       "loc": {
         "start": {
           "line": 38,
@@ -3815,8 +3815,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 842,
-      "end": 846,
+      "start": 879,
+      "end": 883,
       "loc": {
         "start": {
           "line": 38,
@@ -3841,8 +3841,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 846,
-      "end": 847,
+      "start": 883,
+      "end": 884,
       "loc": {
         "start": {
           "line": 38,
@@ -3867,8 +3867,8 @@
         "binop": null
       },
       "value": "isMine",
-      "start": 847,
-      "end": 853,
+      "start": 884,
+      "end": 890,
       "loc": {
         "start": {
           "line": 38,
@@ -3893,8 +3893,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 853,
-      "end": 854,
+      "start": 890,
+      "end": 891,
       "loc": {
         "start": {
           "line": 38,
@@ -3918,8 +3918,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 856,
-      "end": 857,
+      "start": 894,
+      "end": 895,
       "loc": {
         "start": {
           "line": 39,
@@ -3933,9 +3933,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets the number of mines adjacent to the tile.\n\t* @return {number} adjNum\n\t",
-      "start": 861,
-      "end": 945,
+      "value": "*\r\n\t* Gets the number of mines adjacent to the tile.\r\n\t* @return {number} adjNum\r\n\t",
+      "start": 901,
+      "end": 988,
       "loc": {
         "start": {
           "line": 41,
@@ -3960,8 +3960,8 @@
         "binop": null
       },
       "value": "getAdjacent",
-      "start": 947,
-      "end": 958,
+      "start": 991,
+      "end": 1002,
       "loc": {
         "start": {
           "line": 45,
@@ -3985,8 +3985,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 958,
-      "end": 959,
+      "start": 1002,
+      "end": 1003,
       "loc": {
         "start": {
           "line": 45,
@@ -4010,8 +4010,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 959,
-      "end": 960,
+      "start": 1003,
+      "end": 1004,
       "loc": {
         "start": {
           "line": 45,
@@ -4035,8 +4035,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 961,
-      "end": 962,
+      "start": 1005,
+      "end": 1006,
       "loc": {
         "start": {
           "line": 45,
@@ -4063,8 +4063,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 965,
-      "end": 971,
+      "start": 1010,
+      "end": 1016,
       "loc": {
         "start": {
           "line": 46,
@@ -4091,8 +4091,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 972,
-      "end": 976,
+      "start": 1017,
+      "end": 1021,
       "loc": {
         "start": {
           "line": 46,
@@ -4117,8 +4117,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 976,
-      "end": 977,
+      "start": 1021,
+      "end": 1022,
       "loc": {
         "start": {
           "line": 46,
@@ -4143,8 +4143,8 @@
         "binop": null
       },
       "value": "adjNum",
-      "start": 977,
-      "end": 983,
+      "start": 1022,
+      "end": 1028,
       "loc": {
         "start": {
           "line": 46,
@@ -4169,8 +4169,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 983,
-      "end": 984,
+      "start": 1028,
+      "end": 1029,
       "loc": {
         "start": {
           "line": 46,
@@ -4194,8 +4194,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 986,
-      "end": 987,
+      "start": 1032,
+      "end": 1033,
       "loc": {
         "start": {
           "line": 47,
@@ -4209,9 +4209,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets whether the tile has been flagged or not.\n\t* @return {boolean} flagged\n\t",
-      "start": 991,
-      "end": 1077,
+      "value": "*\r\n\t* Gets whether the tile has been flagged or not.\r\n\t* @return {boolean} flagged\r\n\t",
+      "start": 1039,
+      "end": 1128,
       "loc": {
         "start": {
           "line": 49,
@@ -4236,8 +4236,8 @@
         "binop": null
       },
       "value": "getFlagged",
-      "start": 1079,
-      "end": 1089,
+      "start": 1131,
+      "end": 1141,
       "loc": {
         "start": {
           "line": 53,
@@ -4261,8 +4261,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1089,
-      "end": 1090,
+      "start": 1141,
+      "end": 1142,
       "loc": {
         "start": {
           "line": 53,
@@ -4286,8 +4286,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1090,
-      "end": 1091,
+      "start": 1142,
+      "end": 1143,
       "loc": {
         "start": {
           "line": 53,
@@ -4311,8 +4311,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1092,
-      "end": 1093,
+      "start": 1144,
+      "end": 1145,
       "loc": {
         "start": {
           "line": 53,
@@ -4339,8 +4339,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 1096,
-      "end": 1102,
+      "start": 1149,
+      "end": 1155,
       "loc": {
         "start": {
           "line": 54,
@@ -4367,8 +4367,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1103,
-      "end": 1107,
+      "start": 1156,
+      "end": 1160,
       "loc": {
         "start": {
           "line": 54,
@@ -4393,8 +4393,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1107,
-      "end": 1108,
+      "start": 1160,
+      "end": 1161,
       "loc": {
         "start": {
           "line": 54,
@@ -4419,8 +4419,8 @@
         "binop": null
       },
       "value": "flagged",
-      "start": 1108,
-      "end": 1115,
+      "start": 1161,
+      "end": 1168,
       "loc": {
         "start": {
           "line": 54,
@@ -4445,8 +4445,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1115,
-      "end": 1116,
+      "start": 1168,
+      "end": 1169,
       "loc": {
         "start": {
           "line": 54,
@@ -4470,8 +4470,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1118,
-      "end": 1119,
+      "start": 1172,
+      "end": 1173,
       "loc": {
         "start": {
           "line": 55,
@@ -4485,9 +4485,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Gets whether the tile has been revealed or not.\n\t* @return {boolean} flagged\n\t",
-      "start": 1123,
-      "end": 1210,
+      "value": "*\r\n\t* Gets whether the tile has been revealed or not.\r\n\t* @return {boolean} flagged\r\n\t",
+      "start": 1179,
+      "end": 1269,
       "loc": {
         "start": {
           "line": 57,
@@ -4512,8 +4512,8 @@
         "binop": null
       },
       "value": "getRevealed",
-      "start": 1212,
-      "end": 1223,
+      "start": 1272,
+      "end": 1283,
       "loc": {
         "start": {
           "line": 61,
@@ -4537,8 +4537,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1223,
-      "end": 1224,
+      "start": 1283,
+      "end": 1284,
       "loc": {
         "start": {
           "line": 61,
@@ -4562,8 +4562,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1224,
-      "end": 1225,
+      "start": 1284,
+      "end": 1285,
       "loc": {
         "start": {
           "line": 61,
@@ -4587,8 +4587,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1226,
-      "end": 1227,
+      "start": 1286,
+      "end": 1287,
       "loc": {
         "start": {
           "line": 61,
@@ -4615,8 +4615,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 1230,
-      "end": 1236,
+      "start": 1291,
+      "end": 1297,
       "loc": {
         "start": {
           "line": 62,
@@ -4643,8 +4643,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1237,
-      "end": 1241,
+      "start": 1298,
+      "end": 1302,
       "loc": {
         "start": {
           "line": 62,
@@ -4669,8 +4669,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1241,
-      "end": 1242,
+      "start": 1302,
+      "end": 1303,
       "loc": {
         "start": {
           "line": 62,
@@ -4695,8 +4695,8 @@
         "binop": null
       },
       "value": "revealed",
-      "start": 1242,
-      "end": 1250,
+      "start": 1303,
+      "end": 1311,
       "loc": {
         "start": {
           "line": 62,
@@ -4721,8 +4721,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1250,
-      "end": 1251,
+      "start": 1311,
+      "end": 1312,
       "loc": {
         "start": {
           "line": 62,
@@ -4746,8 +4746,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1253,
-      "end": 1254,
+      "start": 1315,
+      "end": 1316,
       "loc": {
         "start": {
           "line": 63,
@@ -4761,9 +4761,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Sets the tile's status to be a mine.\n\t* POSTCONDITION: isMine is true.\n\t",
-      "start": 1258,
-      "end": 1339,
+      "value": "*\r\n\t* Sets the tile's status to be a mine.\r\n\t* POSTCONDITION: isMine is true.\r\n\t",
+      "start": 1322,
+      "end": 1406,
       "loc": {
         "start": {
           "line": 65,
@@ -4788,8 +4788,8 @@
         "binop": null
       },
       "value": "setMine",
-      "start": 1341,
-      "end": 1348,
+      "start": 1409,
+      "end": 1416,
       "loc": {
         "start": {
           "line": 69,
@@ -4813,8 +4813,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1348,
-      "end": 1349,
+      "start": 1416,
+      "end": 1417,
       "loc": {
         "start": {
           "line": 69,
@@ -4838,8 +4838,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1349,
-      "end": 1350,
+      "start": 1417,
+      "end": 1418,
       "loc": {
         "start": {
           "line": 69,
@@ -4863,8 +4863,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1351,
-      "end": 1352,
+      "start": 1419,
+      "end": 1420,
       "loc": {
         "start": {
           "line": 69,
@@ -4891,8 +4891,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1355,
-      "end": 1359,
+      "start": 1424,
+      "end": 1428,
       "loc": {
         "start": {
           "line": 70,
@@ -4917,8 +4917,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1359,
-      "end": 1360,
+      "start": 1428,
+      "end": 1429,
       "loc": {
         "start": {
           "line": 70,
@@ -4943,8 +4943,8 @@
         "binop": null
       },
       "value": "isMine",
-      "start": 1360,
-      "end": 1366,
+      "start": 1429,
+      "end": 1435,
       "loc": {
         "start": {
           "line": 70,
@@ -4970,8 +4970,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 1367,
-      "end": 1368,
+      "start": 1436,
+      "end": 1437,
       "loc": {
         "start": {
           "line": 70,
@@ -4998,8 +4998,8 @@
         "updateContext": null
       },
       "value": "true",
-      "start": 1369,
-      "end": 1373,
+      "start": 1438,
+      "end": 1442,
       "loc": {
         "start": {
           "line": 70,
@@ -5024,8 +5024,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1373,
-      "end": 1374,
+      "start": 1442,
+      "end": 1443,
       "loc": {
         "start": {
           "line": 70,
@@ -5049,8 +5049,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1376,
-      "end": 1377,
+      "start": 1446,
+      "end": 1447,
       "loc": {
         "start": {
           "line": 71,
@@ -5064,9 +5064,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Sets the number of mines adjacent to the tile.\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\n\t",
-      "start": 1381,
-      "end": 1583,
+      "value": "*\r\n\t* Sets the number of mines adjacent to the tile.\r\n\t* POSTCONDITION: adjNum could be anywhere from 0 to 8\r\n\t* @param {number} adj Number of mine adjacent to this tile, retrieved from plantAdjNum()\r\n\t",
+      "start": 1453,
+      "end": 1659,
       "loc": {
         "start": {
           "line": 73,
@@ -5091,8 +5091,8 @@
         "binop": null
       },
       "value": "setAdjacent",
-      "start": 1585,
-      "end": 1596,
+      "start": 1662,
+      "end": 1673,
       "loc": {
         "start": {
           "line": 78,
@@ -5116,8 +5116,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1596,
-      "end": 1597,
+      "start": 1673,
+      "end": 1674,
       "loc": {
         "start": {
           "line": 78,
@@ -5142,8 +5142,8 @@
         "binop": null
       },
       "value": "adj",
-      "start": 1597,
-      "end": 1600,
+      "start": 1674,
+      "end": 1677,
       "loc": {
         "start": {
           "line": 78,
@@ -5167,8 +5167,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1600,
-      "end": 1601,
+      "start": 1677,
+      "end": 1678,
       "loc": {
         "start": {
           "line": 78,
@@ -5192,8 +5192,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1602,
-      "end": 1603,
+      "start": 1679,
+      "end": 1680,
       "loc": {
         "start": {
           "line": 78,
@@ -5220,8 +5220,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1606,
-      "end": 1610,
+      "start": 1684,
+      "end": 1688,
       "loc": {
         "start": {
           "line": 79,
@@ -5246,8 +5246,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1610,
-      "end": 1611,
+      "start": 1688,
+      "end": 1689,
       "loc": {
         "start": {
           "line": 79,
@@ -5272,8 +5272,8 @@
         "binop": null
       },
       "value": "adjNum",
-      "start": 1611,
-      "end": 1617,
+      "start": 1689,
+      "end": 1695,
       "loc": {
         "start": {
           "line": 79,
@@ -5299,8 +5299,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 1618,
-      "end": 1619,
+      "start": 1696,
+      "end": 1697,
       "loc": {
         "start": {
           "line": 79,
@@ -5325,8 +5325,8 @@
         "binop": null
       },
       "value": "adj",
-      "start": 1620,
-      "end": 1623,
+      "start": 1698,
+      "end": 1701,
       "loc": {
         "start": {
           "line": 79,
@@ -5351,8 +5351,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1623,
-      "end": 1624,
+      "start": 1701,
+      "end": 1702,
       "loc": {
         "start": {
           "line": 79,
@@ -5376,8 +5376,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1626,
-      "end": 1627,
+      "start": 1705,
+      "end": 1706,
       "loc": {
         "start": {
           "line": 80,
@@ -5391,9 +5391,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\n\t* POSTCONDTION: flagged is inverted\n\t",
-      "start": 1631,
-      "end": 1782,
+      "value": "*\r\n\t* Reverses the flag status of the tile. If it has been flagged, set to false. If it has not, set to true.\r\n\t* POSTCONDTION: flagged is inverted\r\n\t",
+      "start": 1712,
+      "end": 1866,
       "loc": {
         "start": {
           "line": 82,
@@ -5418,8 +5418,8 @@
         "binop": null
       },
       "value": "flag",
-      "start": 1784,
-      "end": 1788,
+      "start": 1869,
+      "end": 1873,
       "loc": {
         "start": {
           "line": 86,
@@ -5443,8 +5443,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1788,
-      "end": 1789,
+      "start": 1873,
+      "end": 1874,
       "loc": {
         "start": {
           "line": 86,
@@ -5468,8 +5468,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1789,
-      "end": 1790,
+      "start": 1874,
+      "end": 1875,
       "loc": {
         "start": {
           "line": 86,
@@ -5493,8 +5493,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1791,
-      "end": 1792,
+      "start": 1876,
+      "end": 1877,
       "loc": {
         "start": {
           "line": 86,
@@ -5521,8 +5521,8 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 1795,
-      "end": 1797,
+      "start": 1881,
+      "end": 1883,
       "loc": {
         "start": {
           "line": 87,
@@ -5546,8 +5546,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1798,
-      "end": 1799,
+      "start": 1884,
+      "end": 1885,
       "loc": {
         "start": {
           "line": 87,
@@ -5574,8 +5574,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1799,
-      "end": 1803,
+      "start": 1885,
+      "end": 1889,
       "loc": {
         "start": {
           "line": 87,
@@ -5600,8 +5600,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1803,
-      "end": 1804,
+      "start": 1889,
+      "end": 1890,
       "loc": {
         "start": {
           "line": 87,
@@ -5626,8 +5626,8 @@
         "binop": null
       },
       "value": "flagged",
-      "start": 1804,
-      "end": 1811,
+      "start": 1890,
+      "end": 1897,
       "loc": {
         "start": {
           "line": 87,
@@ -5651,8 +5651,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1811,
-      "end": 1812,
+      "start": 1897,
+      "end": 1898,
       "loc": {
         "start": {
           "line": 87,
@@ -5676,8 +5676,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1813,
-      "end": 1814,
+      "start": 1899,
+      "end": 1900,
       "loc": {
         "start": {
           "line": 87,
@@ -5704,8 +5704,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1818,
-      "end": 1822,
+      "start": 1905,
+      "end": 1909,
       "loc": {
         "start": {
           "line": 88,
@@ -5730,8 +5730,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1822,
-      "end": 1823,
+      "start": 1909,
+      "end": 1910,
       "loc": {
         "start": {
           "line": 88,
@@ -5756,8 +5756,8 @@
         "binop": null
       },
       "value": "flagged",
-      "start": 1823,
-      "end": 1830,
+      "start": 1910,
+      "end": 1917,
       "loc": {
         "start": {
           "line": 88,
@@ -5783,8 +5783,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 1831,
-      "end": 1832,
+      "start": 1918,
+      "end": 1919,
       "loc": {
         "start": {
           "line": 88,
@@ -5811,8 +5811,8 @@
         "updateContext": null
       },
       "value": "false",
-      "start": 1833,
-      "end": 1838,
+      "start": 1920,
+      "end": 1925,
       "loc": {
         "start": {
           "line": 88,
@@ -5837,8 +5837,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1838,
-      "end": 1839,
+      "start": 1925,
+      "end": 1926,
       "loc": {
         "start": {
           "line": 88,
@@ -5862,8 +5862,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1842,
-      "end": 1843,
+      "start": 1930,
+      "end": 1931,
       "loc": {
         "start": {
           "line": 89,
@@ -5890,8 +5890,8 @@
         "updateContext": null
       },
       "value": "else",
-      "start": 1846,
-      "end": 1850,
+      "start": 1935,
+      "end": 1939,
       "loc": {
         "start": {
           "line": 90,
@@ -5915,8 +5915,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1851,
-      "end": 1852,
+      "start": 1940,
+      "end": 1941,
       "loc": {
         "start": {
           "line": 90,
@@ -5943,8 +5943,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1856,
-      "end": 1860,
+      "start": 1946,
+      "end": 1950,
       "loc": {
         "start": {
           "line": 91,
@@ -5969,8 +5969,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1860,
-      "end": 1861,
+      "start": 1950,
+      "end": 1951,
       "loc": {
         "start": {
           "line": 91,
@@ -5995,8 +5995,8 @@
         "binop": null
       },
       "value": "flagged",
-      "start": 1861,
-      "end": 1868,
+      "start": 1951,
+      "end": 1958,
       "loc": {
         "start": {
           "line": 91,
@@ -6022,8 +6022,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 1869,
-      "end": 1870,
+      "start": 1959,
+      "end": 1960,
       "loc": {
         "start": {
           "line": 91,
@@ -6050,8 +6050,8 @@
         "updateContext": null
       },
       "value": "true",
-      "start": 1871,
-      "end": 1875,
+      "start": 1961,
+      "end": 1965,
       "loc": {
         "start": {
           "line": 91,
@@ -6076,8 +6076,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1875,
-      "end": 1876,
+      "start": 1965,
+      "end": 1966,
       "loc": {
         "start": {
           "line": 91,
@@ -6101,8 +6101,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1879,
-      "end": 1880,
+      "start": 1970,
+      "end": 1971,
       "loc": {
         "start": {
           "line": 92,
@@ -6126,8 +6126,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1882,
-      "end": 1883,
+      "start": 1974,
+      "end": 1975,
       "loc": {
         "start": {
           "line": 93,
@@ -6141,9 +6141,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t* Reveals the tile, setting revealed to true.\n\t* POSTCONDTION: revealed is true.\n\t",
-      "start": 1887,
-      "end": 1976,
+      "value": "*\r\n\t* Reveals the tile, setting revealed to true.\r\n\t* POSTCONDTION: revealed is true.\r\n\t",
+      "start": 1981,
+      "end": 2073,
       "loc": {
         "start": {
           "line": 95,
@@ -6168,8 +6168,8 @@
         "binop": null
       },
       "value": "reveal",
-      "start": 1978,
-      "end": 1984,
+      "start": 2076,
+      "end": 2082,
       "loc": {
         "start": {
           "line": 99,
@@ -6193,8 +6193,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1984,
-      "end": 1985,
+      "start": 2082,
+      "end": 2083,
       "loc": {
         "start": {
           "line": 99,
@@ -6218,8 +6218,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1985,
-      "end": 1986,
+      "start": 2083,
+      "end": 2084,
       "loc": {
         "start": {
           "line": 99,
@@ -6243,8 +6243,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1987,
-      "end": 1988,
+      "start": 2085,
+      "end": 2086,
       "loc": {
         "start": {
           "line": 99,
@@ -6271,8 +6271,8 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 1991,
-      "end": 1995,
+      "start": 2090,
+      "end": 2094,
       "loc": {
         "start": {
           "line": 100,
@@ -6297,8 +6297,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1995,
-      "end": 1996,
+      "start": 2094,
+      "end": 2095,
       "loc": {
         "start": {
           "line": 100,
@@ -6323,8 +6323,8 @@
         "binop": null
       },
       "value": "revealed",
-      "start": 1996,
-      "end": 2004,
+      "start": 2095,
+      "end": 2103,
       "loc": {
         "start": {
           "line": 100,
@@ -6350,8 +6350,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 2005,
-      "end": 2006,
+      "start": 2104,
+      "end": 2105,
       "loc": {
         "start": {
           "line": 100,
@@ -6378,8 +6378,8 @@
         "updateContext": null
       },
       "value": "true",
-      "start": 2007,
-      "end": 2011,
+      "start": 2106,
+      "end": 2110,
       "loc": {
         "start": {
           "line": 100,
@@ -6404,8 +6404,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2011,
-      "end": 2012,
+      "start": 2110,
+      "end": 2111,
       "loc": {
         "start": {
           "line": 100,
@@ -6429,8 +6429,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 2014,
-      "end": 2015,
+      "start": 2114,
+      "end": 2115,
       "loc": {
         "start": {
           "line": 101,
@@ -6454,8 +6454,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 2018,
-      "end": 2019,
+      "start": 2120,
+      "end": 2121,
       "loc": {
         "start": {
           "line": 103,
@@ -6480,8 +6480,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2019,
-      "end": 2019,
+      "start": 2121,
+      "end": 2121,
       "loc": {
         "start": {
           "line": 103,

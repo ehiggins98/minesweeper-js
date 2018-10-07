@@ -361,10 +361,7 @@ export class Board {
   /**
    * This is a recursive function that will execute any one of block on the block been clicked. It will change all the tile's revealed = true, who have number 0. Even the tile set with flagged.
    * POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was clicked, set just that tile to be revealed. If a 0 was clicked, every adjacent tile not a mine is revealed. All spaces that were flagged that are now revealed are not flagged anymore.
-   * @param {number} i Row property of tile being revealed.
-   * @param {number} j Column property of tile being revealed.
    */
-
   revealBombs() {
     let i = 2;
     let interval = setInterval(function(){
@@ -377,7 +374,7 @@ export class Board {
     document.getElementById('cheatButton').innerHTML = '3'
     for (let i = 0; i < this.rows; i++) {
         for (let j = 0; j < this.columns; j++) {
-          if (this.arr[i][j].getMine() == true) {
+          if (this.arr[i][j].getMine()) {
             document.getElementById(i * this.columns + j).style.backgroundColor =
               "Red";
           }
@@ -386,6 +383,10 @@ export class Board {
     setTimeout(this.resetCheatMode, 3000, this.rows * this.columns);
   }
 
+  /**
+   * Resets the coloring on bombs that were revealed while cheat mode was active.
+   * @param {number} numOfCells The number of cells to reset. This should always be the number of cells in the board.
+   */
   resetCheatMode(numOfCells) {
 
     for (let i = 0; i < numOfCells; i++) {
@@ -393,6 +394,11 @@ export class Board {
     }
   }
 
+  /**
+   * Reveal values and bombs (if applicable) when a user clicks on a cell.
+   * @param {number} i The vertical index, starting at 0 from the top of the board, around which to reveal. 
+   * @param {*} j The horizontal index, starting at 0 from the left of the board, around which to reveal.
+   */
   clickReveal(i, j) {
     let self = this;
 

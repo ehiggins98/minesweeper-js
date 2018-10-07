@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-</head>
+<meta name="description" content="EECS 448 Project 1: Minesweeper - Written in Javascript and HTML"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Minesweeper"><meta property="twitter:description" content="EECS 448 Project 1: Minesweeper - Written in Javascript and HTML"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/J3Productions/minesweeper-js"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/ehiggins98/minesweeper-js"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -32,16 +32,18 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/board.js~Board.html">Board</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tile.js~Tile.html">Tile</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-boardGen">boardGen</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cheatMode">cheatMode</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMinesInput">checkMinesInput</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-leftClick">leftClick</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playGame">playGame</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rightClick">rightClick</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="minesweeper-js">Minesweeper-js</h1><p>EECS 448 Project 1: Minesweeper - Written in Javascript and HTML</p>
-<p>To play the game, enter a number between 2 and 45 for the dimensions of your Minesweeper board, and then enter how many mines you want on the board (between 1 and 1 less than the total number of tiles on the board) and click &quot;Start&quot;. Then, to reveal a space, left-click on it. To flag a space, right-click on it (and right-click again to un-flag it). Once all the mines have been flagged, you win the game. But if you reveal a mine, the game is over. You may change the board dimensions and mine count at any time and click &quot;Restart&quot; to start a new game.</p>
-<h3 id="-a-href--https---j3productions-github-io-minesweeper-js--play-the-game--a-"><a href="https://j3productions.github.io/minesweeper-js">Play the Game</a></h3><h2 id="authors">Authors</h2><p><strong><a href="https://github.com/J3Productions">J3 Productions</a></strong> - <a href="https://github.com/JielongCong">Jielong Cong</a>, <a href="https://github.com/compoundfraxure">Jacob Parnell</a>, <a href="https://github.com/JasonPurinton">Jason Purinton</a></p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="minesweeper-js">Minesweeper-js</h1><p>EECS 448 Project 1/2: Minesweeper - Written in Javascript and HTML</p>
+<p>To play the game, enter a number between 2 and 45 for the dimensions of your Minesweeper board, and then enter how many mines you want on the board (between 1 and 1 less than the total number of tiles on the board) and click &quot;Start&quot;. Then, to reveal a space, left click on it. To flag a space, right click on it (and right click again to unflag it). Once all the mines have been flagged, you win the game. But if you click on a mine, the game is over. You may change the board dimensions and mine count at any time and click &quot;Restart&quot; to start a new game.</p>
+<h3 id="-a-href--https---j3productions-github-io-minesweeper-js--play-the-game--a-"><a href="https://ehiggins98.github.io/minesweeper-js">Play the Game</a></h3><h2 id="authors">Authors</h2><p><strong><a href="https://github.com/J3Productions">J3 Productions</a></strong> - <a href="https://github.com/JielongCong">Jielong Cong</a>, <a href="https://github.com/compoundfraxure">Jacob Parnell</a>, <a href="https://github.com/JasonPurinton">Jason Purinton</a></p><p><a href="https://i.groupme.com/748x748.jpeg.f647318967c84d9e8789e9a4899eb276.preview"><strong>Black Panthas</strong></a> - <a href="https://github.com/ehiggins98">Eric "The Legend" Higgins</a>, <a href="https://github.com/hibernian99">Josh "VueJS Master" High</a>, <a href="https://github.com/zkulphong">Zak "The Billionaire" Kulphongpatana</a></p>
 <h4 id="-a-href--https---j3productions-github-io-minesweeper-js-documentation-j3-meeting-log-retrospective-docx--team-log-and-retrospective--a-"><a href="https://j3productions.github.io/minesweeper-js/documentation/j3-meeting-log-retrospective.docx">Team Log and Retrospective</a></h4><h2 id="codebase-structure">Codebase Structure</h2><ul>
 <li><a href="https://j3productions.github.io/minesweeper-js/documentation/function">main.js</a> - The only class file that interacts with index.html. Contains methods for form input processing, generating a board, and for left and right clicks. Interfaces only with Board object.</li>
 <li><a href="https://j3productions.github.io/minesweeper-js/documentation/class/js/board.js~Board.html">board.js</a> - The class file that stores all game board methods and variables. Responsible for creating the board, planting the mines and adjacent numbers, and revealing/flagging tiles. Interfaces with Tile object.</li>

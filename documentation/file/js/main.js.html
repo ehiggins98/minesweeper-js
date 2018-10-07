@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-</head>
+<meta name="description" content="EECS 448 Project 1: Minesweeper - Written in Javascript and HTML"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Minesweeper"><meta property="twitter:description" content="EECS 448 Project 1: Minesweeper - Written in Javascript and HTML"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/J3Productions/minesweeper-js"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/ehiggins98/minesweeper-js"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -32,8 +32,10 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/board.js~Board.html">Board</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tile.js~Tile.html">Tile</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-boardGen">boardGen</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cheatMode">cheatMode</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMinesInput">checkMinesInput</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-leftClick">leftClick</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playGame">playGame</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rightClick">rightClick</a></span></span></li>
 </ul>
 </div>
@@ -41,7 +43,7 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">js/main.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;;
-import { Board } from &apos;./board.js&apos;
+import { Board } from &apos;./board.js&apos;;
 
 /**
  * Global game object that Main interfaces with
@@ -50,10 +52,29 @@ import { Board } from &apos;./board.js&apos;
 let game = undefined;
 
 /**
+ * The vertical increments necessary to check each tile adjacent to a location on the board.
+ */
+const iInc = [0, 1, 1, 1, 0, -1, -1, -1];
+
+/**
+ * The horizontal increments necessary to check each tile adjacent to a location on the board.
+ */
+const jInc = [1, 1, 0, -1, -1, -1, 0, 1];
+
+/**
  * Run when length input and height field are changed, enables and disables the number of mines input field based on validity of length and height input field. Checks length and height input fields and checks whether they are valid or not. If they are both valid (non-empty and within the range 2-45), the input field for the number of mines is set to non-read only and the maximum value is set to be equal to the area of the board - 1. If not, the input field for the number of mines is set to read only.
  * PRECONDITION: boardLength and boardHeight have been changed by the user and both are valid inputs.
  * POSTCONDITION: minesInput&apos;s readOnly attribute has been set to true or false.
  */
+export function cheatMode(){
+	console.log(&quot;cheat mode enabled&quot;);
+	game.revealBombs()
+	setTimeout(function(){
+		document.getElementById(&apos;cheatButton&apos;).innerHTML = &quot;Enable Cheat Mode&quot;
+	}, 3000)
+	
+}
+
 export function checkMinesInput() {
     let lengthField = document.getElementById(&quot;boardLength&quot;);
     let heightField = document.getElementById(&quot;boardHeight&quot;);
@@ -69,25 +90,25 @@ export function checkMinesInput() {
 }
 
 /**
- * Run when start/restart button is pressed, generates a game board if input conditions are met. Checks the validitiy of every input field (non-empty and within their respective ranges). If they are all valid, a new {@link Board} object is created and stored in game. The Board then plants the mines and all adjacent numbers calling {@link plantMine} and {@link plantAdjNum}. The game board area is then cleared and a table is created by creating element nodes of type TD, attaching a numeric ID to each one. These are then appended into TR nodes, which are then appended to the TABLE node in index.html. The status display is then unhidden and the start button is changed to a reset button. If all input fields are not valid, display an alert and force the user to try their inputs again.
+ * Run when start/Reset button is pressed, generates a game board if input conditions are met. Checks the validitiy of every input field (non-empty and within their respective ranges). If they are all valid, a new {@link Board} object is created and stored in game. The Board then plants the mines and all adjacent numbers calling {@link plantMine} and {@link plantAdjNum}. The game board area is then cleared and a table is created by creating element nodes of type TD, attaching a numeric ID to each one. These are then appended into TR nodes, which are then appended to the TABLE node in index.html. The status display is then unhidden and the start button is changed to a reset button. If all input fields are not valid, display an alert and force the user to try their inputs again.
  * PRECONDITION: startButton has been clicked by the user and boardLength, boardHeight, and minesInput are valid inputs.
- * POSTCONDITION: game is now a Board with mines and adjacent numbers planted, game is represented as a table, startButton is now red and reads Restart, and flags/mines stat bar is now shown.
+ * POSTCONDITION: game is now a Board with mines and adjacent numbers planted, game is represented as a table, startButton is now red and reads Reset, and flags/mines stat bar is now shown.
  */
 export function boardGen() {
 	let lengthField = document.getElementById(&quot;boardLength&quot;);
 	let heightField = document.getElementById(&quot;boardHeight&quot;);
 	let minesField = document.getElementById(&quot;minesInput&quot;);
-	
+
 	lengthField.setAttribute(&quot;class&quot;, &quot;form-control&quot;);
 	heightField.setAttribute(&quot;class&quot;, &quot;form-control&quot;);
 	minesField.setAttribute(&quot;class&quot;, &quot;form-control&quot;);
-    
+
 
 	if (lengthField.validity.valid == true &amp;&amp; heightField.validity.valid == true &amp;&amp; minesField.validity.valid == true) {
 		let length = lengthField.value;
 		let height = heightField.value;
 		let mines = minesField.value;
-        
+
         game = new Board(mines, height, length);
         game.plantMine();
         game.plantAdjNum();
@@ -108,10 +129,15 @@ export function boardGen() {
 
 
 		document.getElementById(&quot;status&quot;).hidden = false;
+
+		document.getElementById(&apos;cheatButton&apos;).style.display = &quot;block&quot;;
+		document.getElementById(&apos;botButton&apos;).style.display = &quot;block&quot;;
 		document.getElementById(&quot;startButton&quot;).setAttribute(&quot;class&quot;, &quot;btn btn-danger btn-lg btn-block&quot;);
-		document.getElementById(&quot;startButton&quot;).innerHTML = &quot;Restart&quot;;
+		// document.h
+		document.getElementById(&quot;startButton&quot;).innerHTML = &quot;Reset&quot;;
 		document.getElementById(&quot;flagsPlaced&quot;).innerHTML = 0;
 		document.getElementById(&quot;minesOnBoard&quot;).innerHTML = mines;
+
 	}
 	else {
 		if (lengthField.validity.valid == false) {
@@ -137,15 +163,10 @@ export function boardGen() {
  * @return {null} Return null only if the game is over or the tile has already been revealed.
  */
 export function leftClick(clicked) {
+	document.getElementById(&quot;botButton&quot;).style.display = &quot;none&quot;;
 	let cellID = Number(clicked.getAttribute(&quot;id&quot;));
 	let flags = document.getElementById(&quot;flagsPlaced&quot;).innerHTML;
-	if (game.loser || game.winner) {
-		$(function(){
-			$(&apos;#reset-game&apos;).modal(&apos;show&apos;);
-		});
-		return null;
-	}
-	
+
 	//[row, column]
 	let coord = [Math.floor(cellID / game.columns), (cellID % game.columns)];
 	if (game.isTileRevealed(coord[0], coord[1]) == false)  {
@@ -154,7 +175,7 @@ export function leftClick(clicked) {
 	else {
 		return null;
 	}
-	
+
 	if (game.loser == true) {
 		game.showAllMine();
 		clicked.setAttribute(&quot;style&quot;, &quot;color: red;&quot;);
@@ -191,7 +212,7 @@ export function leftClick(clicked) {
 			}
 		}
 	}
-	
+
 	flags = game.minesTotal - game.numFlags;
 	document.getElementById(&quot;flagsPlaced&quot;).innerHTML = flags;
 }
@@ -204,19 +225,14 @@ export function leftClick(clicked) {
  * @return {null} Return null only if the game is over or the tile has already been revealed.
  */
 export function rightClick(clicked) {
+	document.getElementById(&quot;botButton&quot;).style.display = &quot;none&quot;;
 	let cellID = Number(clicked.getAttribute(&quot;id&quot;));
 	let flags = document.getElementById(&quot;flagsPlaced&quot;).innerHTML;
-	if (game.loser || game.winner) {
-		$(function(){
-			$(&apos;#reset-game&apos;).modal(&apos;show&apos;);
-		});
-		return null;
-	}
-	
+
 	//[row, column]
 	let coord = [Math.floor(cellID / game.columns), (cellID % game.columns)];
 	let flagTile = game.setFlag(coord[0], coord[1]);
-	
+
 	if (flagTile == true) {
 		clicked.innerHTML = &quot;&amp;#9873;&quot;;
 	}
@@ -226,16 +242,146 @@ export function rightClick(clicked) {
 	else {
 		return null;
 	}
-	
+
 	flags = game.minesTotal - game.numFlags;
 	document.getElementById(&quot;flagsPlaced&quot;).innerHTML = flags;
-	
+
 	if (game.winner == true) {
 		$(function(){
 			$(&apos;#winner&apos;).modal(&apos;show&apos;);
 		});
 	}
+}
+
+/**
+ * Plays the game with the bot. This should only be called once per game, as it schedules a task to run every second until the game finishes.
+ */
+export function playGame() {
+	setTimeout(makeFirstMove, 50);
 	
+	let interval = setInterval(() =&gt; {
+		let probabilities = initializeProbabilities();
+		for(let i = 0; i &lt; game.arr.length; i++) {
+			for(let j = 0; j &lt; game.arr[i].length; j++) {
+				if(game.arr[i][j].revealed &amp;&amp; game.arr[i][j].adjNum &gt; 0 &amp;&amp; game.arr[i][j].adjNum &lt; 9) {
+					let adjacent = countAdjacentHidden(i, j);
+
+					if(adjacent == game.arr[i][j].adjNum) {
+						flagAdjacent(i, j);
+					}
+					if (game.arr[i][j].adjNum - countAdjacentFlag(i, j) == 0){
+						putProbabilities(probabilities, i, j, -100);
+					}
+
+					else {
+						putProbabilities(probabilities, i, j, (game.arr[i][j].adjNum - countAdjacentFlag(i, j)) / adjacent);
+					}
+				}
+			}
+		}
+
+		if(game.winner || game.loser){
+			clearInterval(interval);
+		}
+		clickLowestProbability(probabilities);
+
+	}, 1000);
+}
+
+/**
+ * Initializes the probability matrix with a 0 in every position and size corresponding to the size of the board.
+ * @return {Array} The blank probability matrix.
+ */
+function initializeProbabilities() {
+	let probabilities = [];
+
+	for(let i = 0; i &lt; game.arr.length; i++) {
+		probabilities[i] = [];
+		for(let j = 0; j &lt; game.arr[i].length; j++) {
+			probabilities[i].push(0);
+		}
+	}
+	return probabilities;
+}
+
+/**
+ * Returns a value indicating whether a location is within the bounds of the board.
+ * @param {number} i The vertical index of the position, starting at 0 from the top of the board.
+ * @param {number} j The horizontal index of the position, starting at 0 from the left of the board.
+ * @return {boolean} A value indicating whether the given location is within the bounds of the board.
+ */
+function isInBoard(i, j) {
+	return i &lt; game.arr.length &amp;&amp; i &gt;= 0 &amp;&amp; j &lt; game.arr[i].length &amp;&amp; j &gt;= 0;
+}
+
+/**
+ * Makes the bot&apos;s first move. This is always the position as near to the center of the board as possible.
+ */
+function makeFirstMove() {
+	document.getElementById(Math.floor(game.rows/2) * game.columns + Math.floor(game.columns/2)).click();
+}
+
+/**
+ * Counts the tiles adjacent to a given position that have yet to be revealed.
+ * @param {number} i The vertical position, starting at 0 at the top of the board, to consider.
+ * @param {number} j The horizontal position, starting at 0 from the left of the board, to consider.
+ * @return {number} The number of tiles adjacent to the given position that have yet to be revealed.
+ */
+function countAdjacentHidden(i, j) {
+	let count = 0
+	for(let k = 0; k &lt; iInc.length; k++) {
+		count += isInBoard(i+iInc[k], j+jInc[k]) &amp;&amp; !game.arr[i+iInc[k]][j+jInc[k]].revealed;
+	}
+	return count;
+}
+
+/**
+ * Adds the given probability to uncovered cells adjacent to [i][j] in the probability matrix.
+ * @param {number[][]} probabilities The probability matrix to which to add the probability.
+ * @param {number} i The vertical position, starting at 0 from the top of the board, around which to add the probability.
+ * @param {number} j The horizontal position, starting at 0 from the left of the board, around which to add the probability.
+ * @param {number} prob The probability to add to the squares around the given position.
+ */
+function putProbabilities(probabilities, i, j, prob) {
+	for(let k = 0; k &lt; iInc.length; k++) {
+		if(isInBoard(i+iInc[k], j+jInc[k]) &amp;&amp; !game.arr[i+iInc[k]][j+jInc[k]].revealed &amp;&amp; !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+			probabilities[i+iInc[k]][j+jInc[k]] += prob;
+		}
+	}
+}
+
+/**
+ * Places a flag in all unrevealed tiles adjacent to the given position.
+ * @param {number} i The vertical position, starting at 0 from the top of the board, around which to flag unrevealed tiles.
+ * @param {number} j The horizontal position, starting at 0 from the left of the board, around which to flag unrevealed tiles.
+ */
+function flagAdjacent (i, j) {
+	for(let k = 0; k &lt; iInc.length; k++) {
+		if(isInBoard(i+iInc[k], j+jInc[k]) &amp;&amp; !game.arr[i+iInc[k]][j+jInc[k]].revealed &amp;&amp; !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+			rightClick(document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()));
+		}
+	}
+}
+
+/**
+ * Clicks on the cell in the board with the lowest probability of being a mine.
+ * @param {number} probabilities The probability matrix in which to search.
+ */
+function clickLowestProbability(probabilities) {
+	let minProb = 101;
+	let minX = 0;
+	let minY = 0;
+	for(let i = 0; i &lt; game.arr.length; i++){
+		for(let j = 0; j &lt;game.arr[i].length; j++){
+			if(probabilities[i][j] != 0 &amp;&amp; probabilities[i][j] &lt; minProb){
+				minProb = probabilities[i][j];
+				minX = i;
+				minY = j;
+			}
+		}
+	}
+
+	leftClick(document.getElementById(((minX) * game.columns + (minY)).toString()));
 }</code></pre>
 
 </div>

@@ -7,4 +7,6 @@
 * October 4, 2018
 	* Place: Spahr Library
 	* Work: Planned out the algorithm for the bot. We aren't using machine learning, but writing a probabilistic algorithm to rate the cells that are least likely to be bombs, and clicking on those.
-	
+* October 6, 2018
+	* Place: Jayhawk Towers
+	* Work: Finished developing the bot code to play the game, and updated documentation with our team details and new code.

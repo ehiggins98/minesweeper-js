@@ -8,6 +8,16 @@ import { Board } from './board.js';
 let game = undefined;
 
 /**
+ * The vertical increments necessary to check each tile adjacent to a location on the board.
+ */
+const iInc = [0, 1, 1, 1, 0, -1, -1, -1];
+
+/**
+ * The horizontal increments necessary to check each tile adjacent to a location on the board.
+ */
+const jInc = [1, 1, 0, -1, -1, -1, 0, 1];
+
+/**
  * Run when length input and height field are changed, enables and disables the number of mines input field based on validity of length and height input field. Checks length and height input fields and checks whether they are valid or not. If they are both valid (non-empty and within the range 2-45), the input field for the number of mines is set to non-read only and the maximum value is set to be equal to the area of the board - 1. If not, the input field for the number of mines is set to read only.
  * PRECONDITION: boardLength and boardHeight have been changed by the user and both are valid inputs.
  * POSTCONDITION: minesInput's readOnly attribute has been set to true or false.
@@ -199,52 +209,13 @@ export function rightClick(clicked) {
 	}
 }
 
+/**
+ * Plays the game with the bot. This should only be called once per game, as it schedules a task to run every second until the game finishes.
+ */
 export function playGame() {
-	let iInc = [0, 1, 1, 1, 0, -1, -1, -1];
-	let jInc = [1, 1, 0, -1, -1, -1, 0, 1];
-	
-	let countAdjacentHidden = (i, j) => {
-		let count = 0
-		for(let k = 0; k < iInc.length; k++) {
-			count += isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed;
-		}
-		return count;
-	};
-
-	let putProbabilities = (probabilities, i, j, prob) => {
-		for(let k = 0; k < iInc.length; k++) {
-			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
-				probabilities[i+iInc[k]][j+jInc[k]] += prob;
-			}
-		}
-	};
-
-	let flagAdjacent = (i, j) => {
-		for(let k = 0; k < iInc.length; k++) {
-			if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
-				rightClick(document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()));
-			}
-		}
-	}
-
-	let countAdjacentFlag = (i, j) => {
-		let count = 0
-		for(let k = 0; k < iInc.length; k++) {
-			if(isInBoard(i+iInc[k], j+jInc[k]) && game.arr[i+iInc[k]][j+jInc[k]].flagged){
-			count += 1;
-			}
-		}
-
-		return count;
-	};
-
 	setTimeout(makeFirstMove, 50);
 	
-
-
 	let interval = setInterval(() => {
-
-
 		let probabilities = initializeProbabilities();
 		for(let i = 0; i < game.arr.length; i++) {
 			for(let j = 0; j < game.arr[i].length; j++) {
@@ -268,11 +239,15 @@ export function playGame() {
 		if(game.winner || game.loser){
 			clearInterval(interval);
 		}
-		findLowest(probabilities);		
+		clickLowestProbability(probabilities);
 
 	}, 1000);
 }
 
+/**
+ * Initializes the probability matrix with a 0 in every position and size corresponding to the size of the board.
+ * @return {Array} The blank probability matrix.
+ */
 function initializeProbabilities() {
 	let probabilities = [];
 
@@ -285,15 +260,70 @@ function initializeProbabilities() {
 	return probabilities;
 }
 
+/**
+ * Returns a value indicating whether a location is within the bounds of the board.
+ * @param {number} i The vertical index of the position, starting at 0 from the top of the board.
+ * @param {number} j The horizontal index of the position, starting at 0 from the left of the board.
+ * @return {boolean} A value indicating whether the given location is within the bounds of the board.
+ */
 function isInBoard(i, j) {
-	return i < game.arr.length && i >= 0 && j < game.arr[i].length && j >= 0
+	return i < game.arr.length && i >= 0 && j < game.arr[i].length && j >= 0;
 }
 
+/**
+ * Makes the bot's first move. This is always the position as near to the center of the board as possible.
+ */
 function makeFirstMove() {
 	document.getElementById(Math.floor(game.rows/2) * game.columns + Math.floor(game.columns/2)).click();
 }
 
-function findLowest(probabilities) {
+/**
+ * Counts the tiles adjacent to a given position that have yet to be revealed.
+ * @param {number} i The vertical position, starting at 0 at the top of the board, to consider.
+ * @param {number} j The horizontal position, starting at 0 from the left of the board, to consider.
+ * @return {number} The number of tiles adjacent to the given position that have yet to be revealed.
+ */
+function countAdjacentHidden(i, j) {
+	let count = 0
+	for(let k = 0; k < iInc.length; k++) {
+		count += isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed;
+	}
+	return count;
+}
+
+/**
+ * Adds the given probability to uncovered cells adjacent to [i][j] in the probability matrix.
+ * @param {number[][]} probabilities The probability matrix to which to add the probability.
+ * @param {number} i The vertical position, starting at 0 from the top of the board, around which to add the probability.
+ * @param {number} j The horizontal position, starting at 0 from the left of the board, around which to add the probability.
+ * @param {number} prob The probability to add to the squares around the given position.
+ */
+function putProbabilities(probabilities, i, j, prob) {
+	for(let k = 0; k < iInc.length; k++) {
+		if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+			probabilities[i+iInc[k]][j+jInc[k]] += prob;
+		}
+	}
+}
+
+/**
+ * Places a flag in all unrevealed tiles adjacent to the given position.
+ * @param {number} i The vertical position, starting at 0 from the top of the board, around which to flag unrevealed tiles.
+ * @param {number} j The horizontal position, starting at 0 from the left of the board, around which to flag unrevealed tiles.
+ */
+function flagAdjacent (i, j) {
+	for(let k = 0; k < iInc.length; k++) {
+		if(isInBoard(i+iInc[k], j+jInc[k]) && !game.arr[i+iInc[k]][j+jInc[k]].revealed && !game.arr[i+iInc[k]][j+jInc[k]].flagged) {
+			rightClick(document.getElementById(((i+iInc[k]) * game.columns + (j+jInc[k])).toString()));
+		}
+	}
+}
+
+/**
+ * Clicks on the cell in the board with the lowest probability of being a mine.
+ * @param {number} probabilities The probability matrix in which to search.
+ */
+function clickLowestProbability(probabilities) {
 	let minProb = 101;
 	let minX = 0;
 	let minY = 0;

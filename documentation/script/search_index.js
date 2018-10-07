@@ -1,38 +1,50 @@
 window.esdocSearchIndex = [
   [
-    "./js/board.js~board",
+    "minesweeper/js/board.js~board",
     "class/js/board.js~Board.html",
-    "<span>Board</span> <span class=\"search-result-import-path\">./js/board.js</span>",
+    "<span>Board</span> <span class=\"search-result-import-path\">minesweeper/js/board.js</span>",
     "class"
   ],
   [
-    "./js/tile.js~tile",
+    "minesweeper/js/tile.js~tile",
     "class/js/tile.js~Tile.html",
-    "<span>Tile</span> <span class=\"search-result-import-path\">./js/tile.js</span>",
+    "<span>Tile</span> <span class=\"search-result-import-path\">minesweeper/js/tile.js</span>",
     "class"
   ],
   [
-    "./js/main.js~boardgen",
+    "minesweeper/js/main.js~boardgen",
     "function/index.html#static-function-boardGen",
-    "<span>boardGen</span> <span class=\"search-result-import-path\">./js/main.js</span>",
+    "<span>boardGen</span> <span class=\"search-result-import-path\">minesweeper/js/main.js</span>",
     "function"
   ],
   [
-    "./js/main.js~checkminesinput",
+    "minesweeper/js/main.js~cheatmode",
+    "function/index.html#static-function-cheatMode",
+    "<span>cheatMode</span> <span class=\"search-result-import-path\">minesweeper/js/main.js</span>",
+    "function"
+  ],
+  [
+    "minesweeper/js/main.js~checkminesinput",
     "function/index.html#static-function-checkMinesInput",
-    "<span>checkMinesInput</span> <span class=\"search-result-import-path\">./js/main.js</span>",
+    "<span>checkMinesInput</span> <span class=\"search-result-import-path\">minesweeper/js/main.js</span>",
     "function"
   ],
   [
-    "./js/main.js~leftclick",
+    "minesweeper/js/main.js~leftclick",
     "function/index.html#static-function-leftClick",
-    "<span>leftClick</span> <span class=\"search-result-import-path\">./js/main.js</span>",
+    "<span>leftClick</span> <span class=\"search-result-import-path\">minesweeper/js/main.js</span>",
     "function"
   ],
   [
-    "./js/main.js~rightclick",
+    "minesweeper/js/main.js~playgame",
+    "function/index.html#static-function-playGame",
+    "<span>playGame</span> <span class=\"search-result-import-path\">minesweeper/js/main.js</span>",
+    "function"
+  ],
+  [
+    "minesweeper/js/main.js~rightclick",
     "function/index.html#static-function-rightClick",
-    "<span>rightClick</span> <span class=\"search-result-import-path\">./js/main.js</span>",
+    "<span>rightClick</span> <span class=\"search-result-import-path\">minesweeper/js/main.js</span>",
     "function"
   ],
   [
@@ -405,6 +417,18 @@ window.esdocSearchIndex = [
     "js/board.js~board#plantmine",
     "class/js/board.js~Board.html#instance-method-plantMine",
     "js/board.js~Board#plantMine",
+    "method"
+  ],
+  [
+    "js/board.js~board#resetcheatmode",
+    "class/js/board.js~Board.html#instance-method-resetCheatMode",
+    "js/board.js~Board#resetCheatMode",
+    "method"
+  ],
+  [
+    "js/board.js~board#revealbombs",
+    "class/js/board.js~Board.html#instance-method-revealBombs",
+    "js/board.js~Board#revealBombs",
     "method"
   ],
   [

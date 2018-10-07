@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-</head>
+<meta name="description" content="EECS 448 Project 1: Minesweeper - Written in Javascript and HTML"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Minesweeper"><meta property="twitter:description" content="EECS 448 Project 1: Minesweeper - Written in Javascript and HTML"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/J3Productions/minesweeper-js"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/ehiggins98/minesweeper-js"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -32,15 +32,17 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/board.js~Board.html">Board</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tile.js~Tile.html">Tile</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-boardGen">boardGen</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cheatMode">cheatMode</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMinesInput">checkMinesInput</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-leftClick">leftClick</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playGame">playGame</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rightClick">rightClick</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Board} from &apos;<span><a href="file/js/board.js.html#lineNumber8">./js/board.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Board} from &apos;<span><a href="file/js/board.js.html#lineNumber8">minesweeper/js/board.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
@@ -432,13 +434,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/js/board.js~Board.html#instance-method-clickReveal">clickReveal</a></span></span><span class="code" data-ice="signature">(i: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, j: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/js/board.js~Board.html#instance-method-clickReveal">clickReveal</a></span></span><span class="code" data-ice="signature">(i: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, j: <span>*</span>)</span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>This is a recursive function that will execute any one of block on the block been clicked.</p>
+        <div data-ice="description"><p>Reveal values and bombs (if applicable) when a user clicks on a cell.</p>
 </div>
       </div>
     </td>
@@ -556,6 +558,64 @@ POSTCONDITION: All tiles that aren&apos;t mines have their adjacent number set t
         
         
         <div data-ice="description"><p>This function plant the Mines inside the arr.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/board.js~Board.html#instance-method-resetCheatMode">resetCheatMode</a></span></span><span class="code" data-ice="signature">(numOfCells: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Resets the coloring on bombs that were revealed while cheat mode was active.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/board.js~Board.html#instance-method-revealBombs">revealBombs</a></span></span><span class="code" data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>This is a recursive function that will execute any one of block on the block been clicked.</p>
 </div>
       </div>
     </td>
@@ -1165,19 +1225,18 @@ POSTCONDITION: arr is now populated with tiles; rows, columns, minesTotal, winne
     
     
     
-    <span class="code" data-ice="name">clickReveal</span><span class="code" data-ice="signature">(i: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, j: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>)</span>
+    <span class="code" data-ice="name">clickReveal</span><span class="code" data-ice="signature">(i: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, j: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber407">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber403">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>This is a recursive function that will execute any one of block on the block been clicked. It will change all the tile&apos;s revealed = true, who have number 0. Even the tile set with flagged.
-POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was clicked, set just that tile to be revealed. If a 0 was clicked, every adjacent tile not a mine is revealed. All spaces that were flagged that are now revealed are not flagged anymore.</p>
+  <div data-ice="description"><p>Reveal values and bombs (if applicable) when a user clicks on a cell.</p>
 </div>
 
   
@@ -1194,14 +1253,14 @@ POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was c
       <td data-ice="name" class="code" data-depth="0">i</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>Row property of tile being revealed.</p>
+      <td data-ice="description"><p>The vertical index, starting at 0 from the top of the board, around which to reveal.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">j</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>Column property of tile being revealed.</p>
+      <td data-ice="description"><p>The horizontal index, starting at 0 from the left of the board, around which to reveal.</p>
 </td>
     </tr>
 </tbody>
@@ -1238,7 +1297,7 @@ POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was c
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber966">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber1010">source</a></span></span>
     </span>
   </h3>
 
@@ -1319,7 +1378,7 @@ POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was c
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber956">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber1000">source</a></span></span>
     </span>
   </h3>
 
@@ -1400,7 +1459,7 @@ POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was c
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber90">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber86">source</a></span></span>
     </span>
   </h3>
 
@@ -1445,7 +1504,7 @@ POSTCONDITION: All tiles that aren&apos;t mines have their adjacent number set t
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber72">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber70">source</a></span></span>
     </span>
   </h3>
 
@@ -1454,6 +1513,112 @@ POSTCONDITION: All tiles that aren&apos;t mines have their adjacent number set t
   
   <div data-ice="description"><p>This function plant the Mines inside the arr. The Number of Mines are given by player. Using Math.random() to ramdomly plant the Mines.
 POSTCONDITION: A number of random tiles specified by minesTotal are now set to be mines.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-resetCheatMode">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">resetCheatMode</span><span class="code" data-ice="signature">(numOfCells: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber391">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Resets the coloring on bombs that were revealed while cheat mode was active.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">numOfCells</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The number of cells to reset. This should always be the number of cells in the board.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-revealBombs">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">revealBombs</span><span class="code" data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber366">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>This is a recursive function that will execute any one of block on the block been clicked. It will change all the tile&apos;s revealed = true, who have number 0. Even the tile set with flagged.
+POSTCONDITION: If a mine was clicked, set loser to true. If a number not 0 was clicked, set just that tile to be revealed. If a 0 was clicked, every adjacent tile not a mine is revealed. All spaces that were flagged that are now revealed are not flagged anymore.</p>
 </div>
 
   
@@ -1490,7 +1655,7 @@ POSTCONDITION: A number of random tiles specified by minesTotal are now set to b
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber350">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber307">source</a></span></span>
     </span>
   </h3>
 
@@ -1573,7 +1738,7 @@ POSTCONDITION: The tile clicked on either has a flag or doesn&apos;t, numFlags i
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber393">source</a></span></span>
+      <span data-ice="source"><span><a href="file/js/board.js.html#lineNumber353">source</a></span></span>
     </span>
   </h3>
 
