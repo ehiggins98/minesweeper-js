@@ -1,6 +1,6 @@
 # Minesweeper-js
 
-EECS 448 Project 1: Minesweeper - Written in Javascript and HTML
+EECS 448 Project 2
 
 To play the game, enter a number between 2 and 45 for the dimensions of your Minesweeper board, and then enter how many mines you want on the board (between 1 and 1 less than the total number of tiles on the board) and click "Start". Then, to reveal a space, left-click on it. To flag a space, right-click on it (and right-click again to un-flag it). Once all the mines have been flagged, you win the game. But if you reveal a mine, the game is over. You may change the board dimensions and mine count at any time and click "Restart" to start a new game.
 
